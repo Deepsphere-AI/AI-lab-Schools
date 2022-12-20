@@ -5,7 +5,6 @@ import math
 from PIL import Image
 import pyautogui as pt
 from title_1 import *
-from Data_types import *
 from find_square import * 
 from find_squareroot import * 
 from find_cube import *
