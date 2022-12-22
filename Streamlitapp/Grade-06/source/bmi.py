@@ -17,7 +17,7 @@ def BMI():
         vAR_st.subheader('Select the height format')
     
     with col5:
-        status = vAR_st.selectbox('',('Select','cms','meters','feet'),key='clear6')
+        status = vAR_st.selectbox('',('cms','meters','feet'),key='clear6')
     
     col1,col2,col3=vAR_st.columns((0.5,3.6,0.6))
     with col2:
@@ -37,6 +37,8 @@ def BMI():
         with col2:
             height= vAR_st.slider("Select your height",1.0,10.0,key='clear5')
             bmi = weight/((height/3.28)**2)
+
+    
     
     def clear_text():
         vAR_st.session_state["clear"]=""
@@ -44,7 +46,7 @@ def BMI():
         vAR_st.session_state['clear3']=1
         vAR_st.session_state['clear4']=1.0
         vAR_st.session_state['clear5']=1.0
-        vAR_st.session_state['clear6']='Select'
+        vAR_st.session_state['clear6']='cms'
 
     col6,col7,col8=vAR_st.columns((0.1,2,0.1))
     
@@ -88,7 +90,8 @@ def BMI():
         vAR_st.write("")
         if(vAR_st.button('Submit')):
             # print the BMI INDEX
-            vAR_st.text("Your BMI Index is {}.".format(bmi))
+            with col2:
+                vAR_st.subheader("Your BMI Index is {}.".format(bmi))
             if category=='Adult':
                 adultBMI()
             if category=='Child':
@@ -97,3 +100,5 @@ def BMI():
         with col5:
             vAR_st.write("")
             vAR_st.button("clear",on_click=clear_text)
+
+BMI()
