@@ -76,7 +76,7 @@ vAR_st.markdown("""
 """, unsafe_allow_html=True)
 
 #for opening the css file
-with open('style/style.css') as f:
+with open('style.css') as f:
     vAR_st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 #-------------------------------------------------------------------------------------------------------------
