@@ -11,7 +11,7 @@ import source.lcm_1 as lc
 from source.statistics import stat
 
 vAR_st.set_page_config(layout='wide')
-with open("style/style.css") as vAR_f:
+with open("/app/ai-lab-schools/Streamlitapp/Grade-07/style/style.css") as vAR_f:
     vAR_st.markdown (f"<style>{vAR_f.read()}</style>",unsafe_allow_html=True)
 
 if 'placeholder' not in vAR_st.session_state:
