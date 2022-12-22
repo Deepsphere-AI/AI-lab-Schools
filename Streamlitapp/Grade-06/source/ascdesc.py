@@ -27,6 +27,7 @@ def ascdesc():
 
     def desc():
         vAR_c=[]
+        flag=0
         vAR_b=vAR_a.split(",")
         with col2:
             if s:
