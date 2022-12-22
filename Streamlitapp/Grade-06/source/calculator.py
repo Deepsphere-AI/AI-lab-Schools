@@ -67,10 +67,8 @@ def calculator():
     with col5:
         vAR_sel=vAR_st.selectbox('',("Select","Add","Subract","Multiply","Divide"),key="Clear3")
 
-    if vAR_sel=="Select":
-        if vAR_k:
-            with col5:
-                vAR_st.subheader("Enter a value")
+    
+            
     
     with col1:
         vAR_st.write('')
@@ -82,6 +80,15 @@ def calculator():
     with col2:
         num1=vAR_st.number_input("",key="Clear1")
         num2=vAR_st.number_input("",key="Clear2")
+
+    if vAR_k:
+        if vAR_sel=="Select":
+            if num1 and num2!=0:
+                with col5:
+                    vAR_st.subheader("Select the operation")
+            else:
+                with col5:
+                    vAR_st.subheader("Enter two Numbers")
 
     with col5:
         if vAR_sel=="Add":
@@ -111,3 +118,4 @@ def calculator():
     with col11:
         vAR_st.write('')
         vAR_st.button("Clear",on_click=cleartext)
+
