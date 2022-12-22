@@ -101,4 +101,3 @@ def BMI():
             vAR_st.write("")
             vAR_st.button("clear",on_click=clear_text)
 
-BMI()
