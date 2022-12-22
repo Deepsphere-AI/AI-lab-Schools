@@ -19,7 +19,7 @@ def button_rect():
 def button_sq():
     vAR_st.session_state["sq"]= 0
     vAR_st.session_state["sq2"]= 0
-    vAR_st.session_state["fact_in"]=0
+    vAR_st.session_state["fact_in"]=""
     vAR_st.session_state["palin_in"]=""
     vAR_st.session_state['prime_in']=0
     vAR_st.session_state["rth_in"]=0
