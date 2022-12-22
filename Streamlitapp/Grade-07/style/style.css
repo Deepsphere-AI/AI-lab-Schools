@@ -135,3 +135,8 @@ div.css-6qob1r.e1fqkh3o3 {
     transform: none;
     transition: transform 300ms ease 0s, min-width 300ms ease 0s, max-width 300ms ease 0s;
 }
+
+.css-1x8cf1d:hover {
+    border-color: rgb(70 233 61);
+    color: #000000;
+}
