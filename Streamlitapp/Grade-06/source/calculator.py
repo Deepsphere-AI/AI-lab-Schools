@@ -8,21 +8,21 @@ def calculator():
         vAR_st.write('')
         vAR_st.write('')
         if vAR_k:
-            vAR_st.success(c)
+            vAR_st.subheader(c)
     
     def subract(a,b):
         c=a-b
         vAR_st.write('')
         vAR_st.write('')
         if vAR_k:
-            vAR_st.success(c)
+            vAR_st.subheader(c)
     
     def multiply(a,b):
         c=a*b
         vAR_st.write('')
         vAR_st.write('')
         if vAR_k:
-            vAR_st.success(c)
+            vAR_st.subheader(c)
     
     def divide(a,b):
         try:
@@ -30,7 +30,7 @@ def calculator():
             vAR_st.write('')
             vAR_st.write('')
             if vAR_k:
-                vAR_st.success(c)
+                vAR_st.subheader(c)
         except ZeroDivisionError:
             vAR_st.write('')
             vAR_st.write('')
