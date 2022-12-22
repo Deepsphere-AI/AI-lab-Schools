@@ -21,7 +21,7 @@ col1, col2, col3 = vAR_st.columns((2,5,3))
 with col1:
     vAR_st.write("")
 with col2:
-    vAR_st.image('https://github.com/danishdeepsphere/AI_Schools/blob/main/image/Logo_final.png')
+    vAR_st.image('image/Logo_final.png')
 with col3:
     vAR_st.write("")
 
