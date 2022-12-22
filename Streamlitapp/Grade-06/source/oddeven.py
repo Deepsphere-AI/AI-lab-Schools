@@ -24,7 +24,7 @@ def oddeven():
             vAR_st.button("Clear", on_click=cleartext)
 
         with col2:
-            vAR_num1=vAR_st.text_input("",key="Clear") 
+            vAR_num1=vAR_st.text_input("",key="Clear",placeholder="Eg: 3") 
     
         with col3:
             vAR_st.write("")
