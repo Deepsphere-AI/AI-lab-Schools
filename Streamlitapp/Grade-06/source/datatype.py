@@ -35,9 +35,15 @@ def datatype():
                 with col4:
                     vAR_st.subheader("Integer","")
 
-        elif vAR_name.isalnum()==True:
-            with col4:
-                vAR_st.subheader("Enter a Valid Input","")
+        elif vAR_name.isalpha()==True:
+                with col3:
+                    vAR_st.subheader("Entered Input is a")
+                    with col4:
+                        vAR_st.subheader("String","")
+        
+        
+        
+        
 
         
         elif "." in vAR_name:
@@ -53,12 +59,15 @@ def datatype():
                     with col4:
                         vAR_st.subheader("Enter a valid input","")
         
+        elif vAR_name.isalnum()==True:
+            with col4:
+                vAR_st.subheader("Enter a Valid Input","")
+
         else:
-            if vAR_name.isalpha()==True:
-                with col3:
-                    vAR_st.subheader("Entered Input is a")
-                    with col4:
-                        vAR_st.subheader("String","")
+            with col4:
+                vAR_st.subheader("Enter a Valid Input","")
+
+            
 
     if k:
         if vAR_name=="":
