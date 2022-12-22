@@ -17,7 +17,8 @@ import source.tyme as tc
 
 vAR_st.set_page_config(layout='wide')
 
-
+with open('style/style.css') as f:
+    vAR_st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 #for creating the side menu
 
