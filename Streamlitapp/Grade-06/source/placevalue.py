@@ -8,7 +8,7 @@ def placevalues():
         st.subheader("Enter the Number ")
     with col2:
 # ----input button-----#
-        input_num=st.text_input("",key="text")
+        input_num=st.text_input("",key="text",placeholder="Eg: 12345")
     with bc2:
         def clear_text():
             st.session_state["text"] = ""
