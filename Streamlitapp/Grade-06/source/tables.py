@@ -19,7 +19,7 @@ def tables():
     # ---------input button----------#
     with col2:
         st.markdown("")
-        vAR_input_number=st.text_input("",key="text")
+        vAR_input_number=st.text_input("",key="text",placeholder= "Eg: 3")
     with bc1:
         st.markdown("")
         st.markdown("")
