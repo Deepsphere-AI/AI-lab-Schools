@@ -35,7 +35,7 @@ def ascdesc():
                     if i.isnumeric():
                         vAR_c.append(int(i))
                     else:
-                        vAR_st.subheader("Enter only integer values")
+                        vAR_st.subheader("Enter only numeric values")
                         flag=1
                         break
             
@@ -74,11 +74,27 @@ def ascdesc():
     with col2:
         selected=vAR_st.selectbox("",("Select","Ascending order","Descending order"),key="Clear2")
 
+    if vAR_a!="":
+        if s and selected=="Select":
+            with col2:
+                vAR_st.subheader("Select the sorting order")
+
+    if vAR_a=="":
+        if s:
+            with col2:
+                vAR_st.subheader("Enter the input")
+
+
+    
+
+
     if selected=="Ascending order":
         asc()
         
     if selected=="Descending order":
         desc()
+
+
 
 
         
