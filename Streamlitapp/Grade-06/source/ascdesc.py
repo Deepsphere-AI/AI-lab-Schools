@@ -12,7 +12,7 @@ def ascdesc():
                     if i.isnumeric():
                         vAR_c.append(int(i))
                     else:
-                        vAR_st.subheader("Enter only numeric values")
+                        vAR_st.subheader("Enter only integer values")
                         flag=1
                         break
                 if flag==0:    
@@ -35,7 +35,7 @@ def ascdesc():
                     if i.isnumeric():
                         vAR_c.append(int(i))
                     else:
-                        vAR_st.subheader("Enter only numeric values")
+                        vAR_st.subheader("Enter only integer values")
                         flag=1
                         break
             
