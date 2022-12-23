@@ -44,6 +44,6 @@ def date_to_day():
                     else:
                         st.error("Error")
                     with col1:
-                        st.write("# Answer is ")
+                        st.write("# Day ")
                 except BaseException as error:
-                    st.error("follw this pattern mm/dd/yyyy")
+                    st.error("Follw this pattern mm/dd/yyyy")
