@@ -16,15 +16,20 @@ def cal_GST():
     with col1:
         st.markdown("")
         st.write("# Enter the Price ")
+        st.markdown("")
+        st.markdown("")
+        st.write("# GST in % ")
     # ------------to create the function to clear the input-----------#
     with bc2:
         st.markdown("")
         st.markdown("")
         def clear_text():
-            st.session_state["Clear_price"] = ""
+            st.session_state["Clear_price"] = 0
+            st.session_state["clear_gst"] = 0
         st.button("Clear", on_click=clear_text)   
     with col2:  
-        vAR_input_sellingprice=st.text_input("",placeholder="",key="Clear_price")
+        vAR_input_sellingprice=st.number_input("",min_value=0.00,step=1.0,key="Clear_price")
+        vAR_gst_rate=st.number_input("",min_value=0.00,step=1.0,key="clear_gst")
     #----- Date to Day -------#
     with bc1:
         st.markdown("")
@@ -33,18 +38,16 @@ def cal_GST():
             with col2:
                 if  vAR_input_sellingprice !='':
                     vAR_input_sellingprice=int(vAR_input_sellingprice)
-                    vAR_gst_rate=18
                     vAR_Cgst=vAR_input_sellingprice*(vAR_gst_rate/2)/100
                     vAR_Sgst=vAR_Cgst
                     vAR_18= vAR_Cgst+vAR_Sgst
                     vAR_total=vAR_input_sellingprice + vAR_Cgst + vAR_Sgst
                     vAR_total=round(vAR_total,4)
-                    st.success(vAR_18)
+                    #st.success(vAR_18)
+                    st.markdown("")
                     st.success(vAR_total)
                 else:
                     st.markdown("### ")
                     st.error("Error")
-                with col1:
-                    st.write("# GST 18% ")
-                    
+                with col1:  
                     st.write("# Amount Payable   ")
