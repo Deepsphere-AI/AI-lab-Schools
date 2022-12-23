@@ -1,0 +1,32 @@
+/* Side bar colour */
+.css-6qob1r.e1fqkh3o3 {
+    background-color: #4c85e4;
+    font-family: sans-serif;
+}
+/* image centre alignment */
+.css-1v0mbdj.etr89bj1 {
+    margin: auto;
+}
+/* title alignment */
+span.css-10trblm.e16nr0p30 {
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+}
+/* button color */
+.css-1x8cf1d {
+    background-color: #56db29;
+    /* margin-left: 80px; */
+}
+/* Siderbar barder color */
+div.nav-item.li.nav-item {
+    --primary-color: hsl(240deg 100% 50%);
+}
+/* Sidebar button alignment */
+.row-widget.stButton {
+    margin-left: 80px;
+}
+/* Sidebar button Colour */
+button.css-629wbf.edgvbvh10 {
+    background-color: #56db29;
+}
