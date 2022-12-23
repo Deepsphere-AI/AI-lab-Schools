@@ -39,11 +39,11 @@ def mark():
             st.session_state["sub5"] = 0
         st.button("Clear", on_click=clear_text)  
     with col2:
-        vAR_input_num1=st.number_input("",min_value=0.00,step=1.0,key="sub1")  
-        vAR_input_num2=st.number_input("",min_value=0.00,step=1.0,key="sub2")  
-        vAR_input_num3=st.number_input("",min_value=0.00,step=1.0,key="sub3")  
-        vAR_input_num4=st.number_input("",min_value=0.00,step=1.0,key="sub4")  
-        vAR_input_num5=st.number_input("",min_value=0.00,step=1.0,key="sub5")  
+        vAR_input_num1=st.number_input("",min_value=0,key="sub1")  
+        vAR_input_num2=st.number_input("",min_value=0,key="sub2")  
+        vAR_input_num3=st.number_input("",min_value=0,key="sub3")  
+        vAR_input_num4=st.number_input("",min_value=0,key="sub4")  
+        vAR_input_num5=st.number_input("",min_value=0,key="sub5")  
     
     #-----squreroot-------#
     with bc1:
