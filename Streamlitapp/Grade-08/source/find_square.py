@@ -2,8 +2,6 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
 import source.title_1 as head
-# with open('final.css') as f:
-#         st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=True)
 def square():
     head.title()
     st.markdown("<p style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find the Square </p>", unsafe_allow_html=True)
@@ -18,18 +16,17 @@ def square():
         st.markdown("")
         st.markdown("")
         def clear_text():
-            st.session_state["Clear_Square"] = ""
+            st.session_state["Clear_Square"] = 0
         st.button("Clear", on_click=clear_text)   
     with col2:
-        vAR_input_num=st.text_input("",key="Clear_Square")  
+        vAR_input_num=st.number_input("",min_value=0,key="Clear_Square")  
     #-----squre-------#
     with bc1:
         st.markdown("")
         st.markdown("")
         if st.button("Submit"):
             with col2:
-                if vAR_input_num.isnumeric():
-                    vAR_input_num=int(vAR_input_num)
+                if vAR_input_num !=0:
                     square = vAR_input_num ** 2
                     st.success(square)
                 else:
