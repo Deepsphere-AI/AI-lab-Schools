@@ -38,7 +38,7 @@ def profit_or_loss():
         st.markdown("")
         if st.button("Submit"):
             with col2:
-                if vAR_input_num and vAR_input_num_1 != 0:
+                if vAR_input_num and vAR_input_num_1.isnumeric():
                     cost_price=int(vAR_input_num)
                     selling_price=int(vAR_input_num_1)
                     if (selling_price > cost_price):
