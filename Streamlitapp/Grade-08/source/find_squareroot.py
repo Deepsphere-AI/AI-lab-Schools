@@ -20,7 +20,7 @@ def square_root():
             st.session_state["Clear_Squareroot"] = 0
         st.button("Clear", on_click=clear_text)   
     with col2:
-        vAR_input_num=st.number_input("",min_value=0,key="Clear_Squareroot")  
+        vAR_input_num=st.number_input("",min_value=0.00,step=1.0,key="Clear_Squareroot")  
     #-----squreroot-------#
     with bc1:
         st.markdown("")
