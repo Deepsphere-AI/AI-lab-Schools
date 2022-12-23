@@ -24,9 +24,35 @@ div.nav-item.li.nav-item {
 }
 /* Sidebar button alignment */
 .row-widget.stButton {
-    margin-left: 80px;
+    margin-left: 70px;
 }
 /* Sidebar button Colour */
 button.css-629wbf.edgvbvh10 {
     background-color: #56db29;
+}
+/* side bar size */
+.css-6qob1r {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: overlay;
+    max-width: 300px;
+    /* min-width: 250px; */
+}
+section.css-163ttbj.e1fqkh3o11{
+position:fixed; 
+user-select: auto; 
+width: 301px; 
+height: 100%; box-sizing: 
+border-box; flex-shrink: 0;
+}
+/* side bar select box size */
+.st-by {
+    margin-left: 26px;
+    width: 200px;
+    background-color: rgb(255 255 255);
+}
+.st-dj {
+    width: fit-content;
+    margin-left: -25px;
 }
