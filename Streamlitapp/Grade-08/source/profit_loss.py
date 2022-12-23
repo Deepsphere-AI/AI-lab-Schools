@@ -46,16 +46,20 @@ def profit_or_loss():
                             with col1:
                                 st.write("# Profit ")
                             st.markdown("")
+                            st.markdown("")
                             st.success(profit)
                     elif ( cost_price > selling_price):
                             loss = cost_price - selling_price
                             with col1:
                                 st.write("# Loss ")
                             st.markdown("")
+                            st.markdown("")
                             st.warning(loss)
                     else:
                         st.markdown("")
+                        st.markdown("")
                         st.info("No Profit No Loss")
                 else:
+                    st.markdown("")
                     st.markdown("")
                     st.error("Error")
