@@ -63,7 +63,7 @@ if __name__ == "__main__":
             pl.profit_or_loss()
         if selected == 'Find the Power Value':
             power.power_value()
-        if selected == 'Find the Area of Perameter':
+        if selected == 'Find the Area of Perimeter':
             peri.area_perameter()
         if selected == 'Find the Mark Sheet':
             marks.mark()
