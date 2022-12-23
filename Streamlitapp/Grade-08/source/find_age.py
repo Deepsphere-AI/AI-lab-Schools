@@ -44,4 +44,4 @@ def age():
                 else:
                     st.error("Error")
                 with col1:
-                    st.write("# Answer is ")
+                    st.write("# Age ")
