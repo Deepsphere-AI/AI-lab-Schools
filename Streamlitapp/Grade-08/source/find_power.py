@@ -48,6 +48,7 @@ def power_value():
                         st.error("Error")
                     with col1:
                         st.markdown("")
+                        st.markdown("")
                         st.write("# Answer is ")
                 except BaseException as error:
                     st.error("follw this pattern 2^2")
