@@ -29,7 +29,7 @@ with imcol3:
 with st.sidebar:
     selected = st.selectbox("",
                      ['Home','Square','Square Root','Cube','Find the Day','Find the Age',
-                     'Find the Area of Perameter','Find the Average','Find the Mark Sheet','Find the Profit or Loss',
+                     'Find the Area of Perimeter','Find the Average','Find the Mark Sheet','Find the Profit or Loss',
                      'Gst Calculator','Find the Power Value'],key='text')
     Library = st.selectbox("",
                      ["Library Used","Streamlit","Image","Math","Pandas"],key='text1')
