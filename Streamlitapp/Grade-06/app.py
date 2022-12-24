@@ -15,7 +15,6 @@ import source.placevalue as pv
 import source.tyme as tc
 
 
-
 vAR_st.set_page_config(layout='wide')
 
 
@@ -26,7 +25,7 @@ vAR_st.set_page_config(layout='wide')
 
 with vAR_st.sidebar:
     
-    vAR_selected=vAR_st.selectbox("Menu",('Data type', 'Rounding Off','Arithmetic Operation','BMI','Unit Conversion','Compare two numbers','Sorting order',"Odd or Even","Tables","Numbers range","Place value","Time"),key="Clear8")
+    vAR_selected=vAR_st.selectbox("Menu",('Data type', 'Rounding Off','Arithmetic Operation','BMI','Unit Conversion','Compare two numbers','Sorting order',"Odd or Even","Multiplication tables","Numbers within a range","Place value chart","Time"),key="Clear8")
     vAR_lib=vAR_st.selectbox("",("Libraries","Streamlit","Pillow"),key="Clear9")
     vAR_st.button("Clear/Reset",on_click=dt.clear_text)
     
@@ -40,7 +39,7 @@ col1, col2, col3 = vAR_st.columns([3,5,3])
 with col1:
     vAR_st.write('')
 with col2:
-    vAR_st.image('/app/ai-lab-schools/Streamlitapp/Grade-06/image/ds.png')
+    vAR_st.image('Image/ds.png')
 with col3:
     vAR_st.write('')
 
@@ -61,23 +60,25 @@ if vAR_selected=="Compare two numbers":
 if vAR_selected=="Sorting order":
     vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application for Sorting numbers</p>", unsafe_allow_html=True)
 if vAR_selected=="Odd or Even":
-    vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find ODD or EVEN, Quotient and Remainder</p>", unsafe_allow_html=True)
+    vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find ODD or EVEN</p>", unsafe_allow_html=True)
 if vAR_selected=="Tables":
-    vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Multiplication tables</p>", unsafe_allow_html=True)
-if vAR_selected=="Numbers range":
-    vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to print numbers in range</p>", unsafe_allow_html=True)
-if vAR_selected=="Place value":
+    vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application for printing multiplication tables</p>", unsafe_allow_html=True)
+if vAR_selected=="Numbers within a range":
+    vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to print numbers within a range</p>", unsafe_allow_html=True)
+if vAR_selected=="Place value chart":
     vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find the place value</p>", unsafe_allow_html=True)
 if vAR_selected=="Time":
     vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application for time conversion</p>", unsafe_allow_html=True)
 
 #for horizontal line
+vAR_st.write("")
+vAR_st.write("")
 vAR_st.markdown("""
 <hr style="width:100%;height:3px;background-color:gray;border-width:10">
 """, unsafe_allow_html=True)
 
 #for opening the css file
-with open('/app/ai-lab-schools/Streamlitapp/Grade-06/style/style.css') as f:
+with open('style/style.css') as f:
     vAR_st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 #-------------------------------------------------------------------------------------------------------------
@@ -108,13 +109,13 @@ if __name__=="__main__":
         if vAR_selected=="Odd or Even":
             oe.oddeven()
 
-        if vAR_selected=="Tables":
+        if vAR_selected=="Multiplication tables":
             tb.tables()
         
-        if vAR_selected=="Numbers range":
+        if vAR_selected=="Numbers within a range":
             nr.numrange()
 
-        if vAR_selected=="Place value":
+        if vAR_selected=="Place value chart":
             pv.placevalues()
 
         if vAR_selected=="Time":
