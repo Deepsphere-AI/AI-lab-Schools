@@ -15,7 +15,7 @@ def datatype():
         vAR_st.write("")
         vAR_st.write("")
         vAR_st.write('')
-        vAR_st.subheader("ㅤㅤEnter Input here  ","")
+        vAR_st.subheader("Enter Input here")
     
     col9, col3, col4, col10 = vAR_st.columns((1,2,2,1))
     col11,col5,col6,col12= vAR_st.columns((5,2,2,5))
@@ -31,15 +31,15 @@ def datatype():
     def findtype():
         if vAR_name.isnumeric():
                 with col3:
-                    vAR_st.subheader("Entered Input is an")
+                    vAR_st.subheader("Data type")
                 with col4:
-                    vAR_st.subheader("Integer","")
+                    vAR_st.success("Integer")
 
         elif vAR_name.isalpha()==True:
                 with col3:
-                    vAR_st.subheader("Entered Input is a")
+                    vAR_st.subheader("Data type")
                     with col4:
-                        vAR_st.subheader("String","")
+                        vAR_st.success("String")
         
         
         
@@ -52,26 +52,27 @@ def datatype():
                     vAR_b = int(vAR_a[0])
                     vAR_c = int(vAR_a[1])
                     with col3:
-                        vAR_st.subheader("Entered Input is a")
+                        vAR_st.subheader("Data type")
                     with col4:
-                        vAR_st.subheader("Float","")
+                        vAR_st.success("Float")
                 except:
                     with col4:
-                        vAR_st.subheader("Enter a valid input","")
+                        vAR_st.info("Enter a valid input")
         
         elif vAR_name.isalnum()==True:
             with col4:
-                vAR_st.subheader("Enter a Valid Input","")
+                vAR_st.info("Enter a Valid Input")
 
         else:
             with col4:
-                vAR_st.subheader("Enter a Valid Input","")
+                vAR_st.info("Enter a Valid Input")
 
             
 
     if k:
         if vAR_name=="":
             with col2:
-                vAR_st.subheader("Enter a value")
+                vAR_st.info("Enter a value")
         if vAR_name!="":
             findtype()
+
