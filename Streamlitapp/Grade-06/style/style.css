@@ -118,7 +118,7 @@ div.css-q31e9c.e1tzin5v3{
     font-weight: 400;
     padding: 0.25rem 0.75rem;
     border-radius: 0.25rem;
-    margin: 0px 0px -2px 53px;
+    margin: 50px;
     line-height: 1.6;
     color: inherit;
     width: auto;
@@ -179,4 +179,12 @@ div.css-q31e9c.e1tzin5v3{
 .css-1x8cf1d:hover {
     border-color: rgb(47 236 106);
     color: #000000;
+}
+
+.css-10trblm {
+    position: inherit;
+    flex: 1 1 0%;
+    margin-left: calc(3rem);
+    font-size: 20px;
+
 }
