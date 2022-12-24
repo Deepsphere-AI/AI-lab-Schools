@@ -12,7 +12,7 @@ def ascdesc():
                     if i.isnumeric():
                         vAR_c.append(int(i))
                     else:
-                        vAR_st.subheader("Enter only integer values")
+                        vAR_st.info("Enter only integer values")
                         flag=1
                         break
                 if flag==0:    
@@ -20,7 +20,7 @@ def ascdesc():
                     vAR_res=','.join(str(item) for item in vAR_c)
                     with col1:
                         vAR_st.write("")
-                        vAR_st.subheader("Answer is")
+                        vAR_st.subheader("Result")
 
                     vAR_st.write('')
                     vAR_st.subheader(vAR_res)
@@ -35,7 +35,7 @@ def ascdesc():
                     if i.isnumeric():
                         vAR_c.append(int(i))
                     else:
-                        vAR_st.subheader("Enter only numeric values")
+                        vAR_st.info("Enter only numeric values")
                         flag=1
                         break
             
@@ -44,7 +44,7 @@ def ascdesc():
                     vAR_res=','.join(str(item) for item in vAR_c)
                     with col1:
                         vAR_st.write("")
-                        vAR_st.subheader("Answer is")
+                        vAR_st.subheader("Result")
                     vAR_st.write('')
                     vAR_st.subheader(vAR_res)
 
@@ -65,6 +65,7 @@ def ascdesc():
 
     with col1:
         vAR_st.write('')
+        vAR_st.write('')
         vAR_st.subheader("Enter the numbers")
     with col2:
         vAR_a=vAR_st.text_input("",key="Clear",placeholder="Eg: 1,2,3,4,5")
@@ -82,7 +83,7 @@ def ascdesc():
     if vAR_a=="":
         if s:
             with col2:
-                vAR_st.subheader("Enter the input")
+                vAR_st.info("Enter the input")
 
 
     
