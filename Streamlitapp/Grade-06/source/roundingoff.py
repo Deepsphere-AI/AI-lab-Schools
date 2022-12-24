@@ -3,13 +3,14 @@ import streamlit as vAR_st
 def roundup():
     def cleartext():
         vAR_st.session_state['Clear']=0
-        vAR_st.session_state['Clear2']='Round up to the nearest 10s'
+        vAR_st.session_state['Clear2']='Nearest 10s'
     
     #vAR_st.markdown("<h1 style='text-align: center; color: black; font-size:29px;'>Application to Rounding Off to nearest 10's, 100's, and 1000's</h1>", unsafe_allow_html=True)
     
     cl1,col1,col2,cl2= vAR_st.columns((1,2,2,1))
     
     with col1:
+        vAR_st.write('')
         vAR_st.write('')
         vAR_st.subheader("Enter the Number")
     
@@ -21,7 +22,7 @@ def roundup():
         vAR_st.subheader("Rounding off to")
     
     with col2:
-        category= vAR_st.selectbox('',('Round up to the nearest 10s','Round up to the nearest 100s','Round up to the nearest 1000s'),key='Clear2')
+        category= vAR_st.selectbox('',('Nearest 10s','Nearest 100s','Nearest 1000s'),key='Clear2')
     col3,col4,col5,col6=vAR_st.columns((5,2,2,5))
 
     with col4:
@@ -40,9 +41,9 @@ def roundup():
             if vAR_k:
                 vAR_st.write('')
                 with col1:
-                    vAR_st.subheader("Answer is")
+                    vAR_st.subheader("Result")
                 with col2:
-                    vAR_st.subheader(num1)  
+                    vAR_st.success(num1)  
 
     def hundreds(num1):
         vAR_rem = num1%100
@@ -54,9 +55,9 @@ def roundup():
             if vAR_k:
                 vAR_st.write('')
                 with col1:
-                    vAR_st.subheader("Answer is")
+                    vAR_st.subheader("Result")
                 with col2:
-                    vAR_st.subheader(num1)
+                    vAR_st.success(num1)
 
     def thousands(num1):
         vAR_rem=num1%1000
@@ -68,17 +69,17 @@ def roundup():
             if vAR_k:
                 vAR_st.write('')
                 with col1:
-                    vAR_st.subheader("Answer is")
+                    vAR_st.subheader("Result")
                 with col2:
-                    vAR_st.subheader(num1)
+                    vAR_st.success(num1)
 
-    if category=='Round up to the nearest 10s':
+    if category=='Nearest 10s':
         tens(num1)
         
-    if category=='Round up to the nearest 100s':
+    if category=='Nearest 100s':
         hundreds(num1)
 
-    if category=='Round up to the nearest 1000s':
+    if category=='Nearest 1000s':
         thousands(num1)
     
         
