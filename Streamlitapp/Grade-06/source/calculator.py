@@ -8,21 +8,21 @@ def calculator():
         vAR_st.write('')
         vAR_st.write('')
         if vAR_k:
-            vAR_st.subheader(c)
+            vAR_st.success(c)
     
     def subract(a,b):
         c=a-b
         vAR_st.write('')
         vAR_st.write('')
         if vAR_k:
-            vAR_st.subheader(c)
+            vAR_st.success(c)
     
     def multiply(a,b):
         c=a*b
         vAR_st.write('')
         vAR_st.write('')
         if vAR_k:
-            vAR_st.subheader(c)
+            vAR_st.success(c)
     
     def divide(a,b):
         try:
@@ -30,12 +30,12 @@ def calculator():
             vAR_st.write('')
             vAR_st.write('')
             if vAR_k:
-                vAR_st.subheader(c)
+                vAR_st.success(c)
         except ZeroDivisionError:
             vAR_st.write('')
             vAR_st.write('')
             if vAR_k:
-                vAR_st.subheader("Cannot divide by zero")
+                vAR_st.info("Cannot divide by zero")
         
     def cleartext():
         vAR_st.session_state["Clear1"]=0
@@ -47,11 +47,11 @@ def calculator():
             vAR_st.write('')
             vAR_st.write('')
             if vAR_k:
-                vAR_st.subheader("Answer is")
+                vAR_st.subheader("Result")
             
 
-    col7,col1,col2,col8= vAR_st.columns((1,3,2,1))
-    col3,col4,col5,col6 = vAR_st.columns((1,3,2,1))
+    col7,col1,col2,col8= vAR_st.columns((1,2,2,1))
+    col3,col4,col5,col6 = vAR_st.columns((1,2,2,1))
     col9,col10,col11,col12= vAR_st.columns((5,2,2,5))
 
     with col10:
@@ -61,7 +61,8 @@ def calculator():
     
     with col4:
         vAR_st.write('')
-        vAR_st.subheader('Operation ')
+        vAR_st.write('')
+        vAR_st.subheader('Arithmetic operation ')
     
     
     with col5:
@@ -73,9 +74,9 @@ def calculator():
     with col1:
         vAR_st.write('')
         vAR_st.write('')
-        vAR_st.subheader("Number 1 ") 
+        vAR_st.subheader("Enter number 1 ") 
         vAR_st.write('')  
-        vAR_st.subheader("Number 2 ")
+        vAR_st.subheader("Enter number 2 ")
         
     with col2:
         num1=vAR_st.number_input("",key="Clear1")
@@ -85,10 +86,10 @@ def calculator():
         if vAR_sel=="Select":
             if num1 and num2!=0:
                 with col5:
-                    vAR_st.subheader("Select the operation")
+                    vAR_st.info("Select the operation")
             else:
                 with col5:
-                    vAR_st.subheader("Enter two Numbers")
+                    vAR_st.info("Enter two Numbers")
 
     with col5:
         if vAR_sel=="Add":
