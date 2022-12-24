@@ -1,426 +1,428 @@
 import streamlit as vAR_st
 
-vAR_st.set_page_config(page_title="My Webpage", page_icon="ds.png", layout='wide')
+
 def unitconversion():
     def kilometer(num):
-        if select=="Kilometer" and select2=="Hectometer":
-            if k:
+        if vAR_select=="Kilometer" and select2=="Hectometer":
+            if vAR_k:
                 with col2:
-                    vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.write('')
+                    vAR_st.subheader("Result")
                 num=num*10
                 with col3:
                     vAR_st.write("")
-                    vAR_st.subheader(num)
-        if select=="Kilometer" and select2=="Decameter":
-            if k:
+                    vAR_st.success(num)
+        if vAR_select=="Kilometer" and select2=="Decameter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*100
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Kilometer" and select2=="Meter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Kilometer" and select2=="Meter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*1000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Kilometer" and select2=="Decimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Kilometer" and select2=="Decimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*10000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Kilometer" and select2=="Centimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Kilometer" and select2=="Centimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*100000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Kilometer" and select2=="Millimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Kilometer" and select2=="Millimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*1000000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
+                        vAR_st.success(num)
 
     def hectometer(num):
-        if select=="Hectometer" and select2=="Kilometer":
-            if k:
+        if vAR_select=="Hectometer" and select2=="Kilometer":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/10
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Hectometer" and select2=="Decameter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Hectometer" and select2=="Decameter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*10
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Hectometer" and select2=="Meter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Hectometer" and select2=="Meter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*100
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Hectometer" and select2=="Decimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Hectometer" and select2=="Decimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*1000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Hectometer" and select2=="Centimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Hectometer" and select2=="Centimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*10000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Hectometer" and select2=="Millimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Hectometer" and select2=="Millimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*100000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
+                        vAR_st.success(num)
 
     def decameter(num):
-        if select=="Decameter" and select2=="Kilometer":
-            if k:
+        if vAR_select=="Decameter" and select2=="Kilometer":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/100
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Decameter" and select2=="Hectometer":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Decameter" and select2=="Hectometer":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/10
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Decameter" and select2=="Meter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Decameter" and select2=="Meter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*10
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Decameter" and select2=="Decimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Decameter" and select2=="Decimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*100
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Decameter" and select2=="Centimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Decameter" and select2=="Centimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*1000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Decameter" and select2=="Millimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Decameter" and select2=="Millimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*10000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
+                        vAR_st.success(num)
 
     def meter(num):
-        if select=="Meter" and select2=="Kilometer":
-            if k:
+        if vAR_select=="Meter" and select2=="Kilometer":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/1000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Meter" and select2=="Hectometer":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Meter" and select2=="Hectometer":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/100
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Meter" and select2=="Decameter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Meter" and select2=="Decameter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/10
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Meter" and select2=="Decimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Meter" and select2=="Decimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*10
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Meter" and select2=="Centimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Meter" and select2=="Centimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*100
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Meter" and select2=="Millimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Meter" and select2=="Millimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*1000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
+                        vAR_st.success(num)
 
     def decimeter(num):
-        if select=="Decimeter" and select2=="Kilometer":
-            if k:
+        if vAR_select=="Decimeter" and select2=="Kilometer":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/10000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Decimeter" and select2=="Hectometer":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Decimeter" and select2=="Hectometer":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/1000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Decimeter" and select2=="Decameter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Decimeter" and select2=="Decameter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/100
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Decimeter" and select2=="Meter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Decimeter" and select2=="Meter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*10
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Decimeter" and select2=="Centimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Decimeter" and select2=="Centimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*10
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Decimeter" and select2=="Millimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Decimeter" and select2=="Millimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*100
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
+                        vAR_st.success(num)
 
     def centimeter(num):
-        if select=="Centimeter" and select2=="Kilometer":
-            if k:
+        if vAR_select=="Centimeter" and select2=="Kilometer":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/100000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Centimeter" and select2=="Hectometer":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Centimeter" and select2=="Hectometer":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/10000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Centimeter" and select2=="Decameter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Centimeter" and select2=="Decameter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/1000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Centimeter" and select2=="Meter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Centimeter" and select2=="Meter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/100
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Centimeter" and select2=="Decimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Centimeter" and select2=="Decimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/10
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Centimeter" and select2=="Millimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Centimeter" and select2=="Millimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num*10
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
+                        vAR_st.success(num)
 
     def millimeter(num):
-        if select=="Millimeter" and select2=="Kilometer":
-            if k:
+        if vAR_select=="Millimeter" and select2=="Kilometer":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/1000000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Millimeter" and select2=="Hectometer":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Millimeter" and select2=="Hectometer":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/100000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Millimeter" and select2=="Decameter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Millimeter" and select2=="Decameter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/10000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Millimeter" and select2=="Meter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Millimeter" and select2=="Meter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/1000
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Millimeter" and select2=="Decimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Millimeter" and select2=="Decimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/100
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
-        if select=="Millimeter" and select2=="Centimeter":
-            if k:
+                        vAR_st.success(num)
+        if vAR_select=="Millimeter" and select2=="Centimeter":
+            if vAR_k:
                 with col2:
                     vAR_st.write("")
-                    vAR_st.subheader("The answer is")
+                    vAR_st.subheader("Result")
                 num=num/10
                 with col3:
                         vAR_st.write("")
-                        vAR_st.subheader(num)
+                        vAR_st.success(num)
 
 
-    col1,col2,col3,col4=vAR_st.columns((2,3,2,2))
+    col1,col2,col3,col4=vAR_st.columns((1,2,2,1))
     with col2:
         vAR_st.write("")
-        vAR_st.subheader("Enter input","")
+        vAR_st.write('')
+        vAR_st.subheader("Enter input")
     with col3:
         num=vAR_st.number_input("",key="Clear3")
     with col2:
         vAR_st.write("")
-        vAR_st.subheader("Select the Unit")
+        vAR_st.subheader("From unit")
     with col3:
-        select=vAR_st.selectbox("",("Select the unit","Kilometer","Hectometer","Decameter","Meter","Decimeter","Centimeter","Millimeter"),key="Clear")
+        vAR_select=vAR_st.selectbox("",("Select the unit","Kilometer","Hectometer","Decameter","Meter","Decimeter","Centimeter","Millimeter"),key="Clear")
     with col2:
         vAR_st.write("")
-        vAR_st.subheader("Unit to convert")
+        vAR_st.write('')
+        vAR_st.subheader("To unit")
     with col3:
-        if select=="Kilometer":
+        if vAR_select=="Kilometer":
             select2=vAR_st.selectbox("",("Select the unit","Hectometer","Decameter","Meter","Decimeter","Centimeter","Millimeter"),key="Clear2")
-        elif select=="Hectometer":
+        elif vAR_select=="Hectometer":
             select2=vAR_st.selectbox("",("Select the unit","Kilometer","Decameter","Meter","Decimeter","Centimeter","Millimeter"),key="Clear2")
-        elif select=="Decameter":
+        elif vAR_select=="Decameter":
             select2=vAR_st.selectbox("",("Select the unit","Kilometer","Hectometer","Meter","Decimeter","Centimeter","Millimeter"),key="Clear2")
-        elif select=="Meter":
+        elif vAR_select=="Meter":
             select2=vAR_st.selectbox("",("Select the unit","Kilometer","Hectometer","Decameter","Decimeter","Centimeter","Millimeter"),key="Clear2")
-        elif select=="Decimeter":
+        elif vAR_select=="Decimeter":
             select2=vAR_st.selectbox("",("Select the unit","Kilometer","Hectometer","Decameter","Meter","Centimeter","Millimeter"),key="Clear2")
-        elif select=="Centimeter":
+        elif vAR_select=="Centimeter":
             select2=vAR_st.selectbox("",("Select the unit","Kilometer","Hectometer","Decameter","Meter","Decimeter","Millimeter"),key="Clear2")
         else:
             select2=vAR_st.selectbox("",("Select the unit","Kilometer","Hectometer","Decameter","Meter","Decimeter","Centimeter"),key="Clear2")
@@ -442,17 +444,17 @@ def unitconversion():
 
     with col6:
         vAR_st.write("")
-        k=vAR_st.button("Submit")
+        vAR_k=vAR_st.button("Submit")
 
-    if k:
-        if select and select2=="Select the unit":
+    if vAR_k:
+        if vAR_select and select2=="Select the unit":
             with col3:
-                vAR_st.subheader("Select a unit to convert")
+                vAR_st.info("Select a unit to convert")
 
-    if k:
-        if select =="Select the unit" and select2 !="Select the unit":
+    if vAR_k:
+        if vAR_select =="Select the unit" and select2 !="Select the unit":
             with col3:
-                vAR_st.subheader("Select the unit of the number")
+                vAR_st.info("Select the unit of the input")
 
 
     with col7:
