@@ -103,7 +103,6 @@ def numrange():
 
     with col7:
         vAR_st.button("Clear",on_click=cleartext)
-numrange()
 
 
 
