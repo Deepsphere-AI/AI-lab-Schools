@@ -27,9 +27,9 @@ def square():
         if st.button("Submit"):
             with col2:
                 if vAR_input_num !=0:
-                    square = vAR_input_num ** 2
-                    square=round(square,2)
-                    st.success(square)
+                    vAR_square = vAR_input_num ** 2
+                    vAR_square=round(vAR_square,2)
+                    st.success(vAR_square)
                 else:
                     st.error("Error")
                 with col1:
