@@ -35,8 +35,8 @@ def age():
                 if vAR_input_num !='':
                     def calculateAge(birthDate):
                         today = date.today()
-                        age = today.year - birthDate.year - ((today.month, today.day) < (birthDate.month, birthDate.day))
-                        return age
+                        vAR_Age = today.year - birthDate.year - ((today.month, today.day) < (birthDate.month, birthDate.day))
+                        return vAR_Age
                     vAR_age=calculateAge(vAR_input_num)
                     st.markdown("")
                     st.markdown("")
