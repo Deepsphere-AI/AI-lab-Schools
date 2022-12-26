@@ -55,14 +55,14 @@ def mark():
                 if vAR_input_num1 and vAR_input_num2 and vAR_input_num3 and vAR_input_num4 and vAR_input_num5 == int or float:
                     vAR_total = vAR_input_num1 + vAR_input_num2 + vAR_input_num3 + vAR_input_num4 + vAR_input_num5
                     vAR_average = vAR_total/5.0
-                    vAR_percentage = (vAR_total / 500.0) * 100
+                    #vAR_percentage = (vAR_total / 500.0) * 100
                     st.success(vAR_total)
                     st.success(vAR_average)
-                    st.success(vAR_percentage)
+                    #st.success(vAR_percentage)
                 
                     with col1:
                         st.write("# Total ")
                         st.write("# Average ")
-                        st.write("# Percentage % ")
+                        #st.write("# Percentage % ")
                 else:
                     st.error("Error")
