@@ -11,7 +11,7 @@ import source.find_age as f_age
 import source.find_avg as f_avg
 import source.profit_loss as pl
 import source.find_power as power
-import source.parameter as peri
+import source.perimeter as peri
 import source.Mark_sheet as marks
 import source.gst as gst
 import source.title_1 as head
