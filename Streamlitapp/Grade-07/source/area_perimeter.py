@@ -28,7 +28,7 @@ def areaperimeter():
                 vAR_st.markdown("### ")
                 vAR_st.markdown("### Radius of Circle")
             with col2:
-                vAR_a=vAR_st.number_input("",key='rad')
+                vAR_a=vAR_st.number_input("",key='rad',min_value=0.00)
             vAR_ar=3.14*vAR_a**2
             with bc1:
                 vAR_st.write("")
@@ -51,7 +51,7 @@ def areaperimeter():
                 vAR_st.markdown("### ")
                 vAR_st.markdown("### Radius of Circle")
             with col2:
-                vAR_b=vAR_st.number_input("",key='rad2')
+                vAR_b=vAR_st.number_input("",key='rad2',min_value=0.00)
             vAR_rp=2*3.14*vAR_b
             with bc1:
                 vAR_st.write("")
@@ -86,8 +86,8 @@ def areaperimeter():
                 vAR_st.markdown("## ")
                 vAR_st.markdown("### Breadth of rectangle")
             with col2:
-                vAR_l=vAR_st.number_input("",key="leng")
-                vAR_b=vAR_st.number_input("",key="brth")
+                vAR_l=vAR_st.number_input("",key="leng",min_value=0.00)
+                vAR_b=vAR_st.number_input("",key="brth",min_value=0.00)
             vAR_arect=vAR_l*vAR_b
             with bc1:
                 vAR_st.write("")
@@ -112,8 +112,8 @@ def areaperimeter():
                 vAR_st.markdown("## ")
                 vAR_st.markdown("### Breadth of rectangle")
             with col2:
-                vAR_l=vAR_st.number_input("",key="leng2")
-                vAR_b=vAR_st.number_input("",key="brth2")
+                vAR_l=vAR_st.number_input("",key="leng2",min_value=0.00)
+                vAR_b=vAR_st.number_input("",key="brth2",min_value=0.00)
             vAR_prect=2*(vAR_l+vAR_b)
             with bc1:
                 vAR_st.write("")
@@ -145,7 +145,7 @@ def areaperimeter():
                 vAR_st.markdown("### ")
                 vAR_st.markdown("### Value of side")
             with col2:
-                vAR_s=vAR_st.number_input("",key='sq')
+                vAR_s=vAR_st.number_input("",key='sq',min_value=0.00)
             vAR_arect=vAR_s**2
             with bc1:
                 vAR_st.write("")
@@ -168,7 +168,7 @@ def areaperimeter():
                 vAR_st.markdown("### ")
                 vAR_st.markdown("### Value of side")
             with col2:
-                vAR_s=vAR_st.number_input("",key='sq2')
+                vAR_s=vAR_st.number_input("",key='sq2',min_value=0.00)
             vAR_prect=4*vAR_s
             with bc1:
                 vAR_st.write("")
@@ -204,8 +204,8 @@ def areaperimeter():
                 vAR_st.markdown("### ")
                 vAR_st.markdown("### Enter the Base")
             with col2:
-                vAR_h=vAR_st.number_input("",key="rth_in")
-                vAR_b=vAR_st.number_input("",key="rtb_in")
+                vAR_h=vAR_st.number_input("",key="rth_in",min_value=0.00)
+                vAR_b=vAR_st.number_input("",key="rtb_in",min_value=0.00)
             vAR_ta=vAR_h*vAR_b*0.5
             with bc1:
                 vAR_st.write("")
@@ -229,8 +229,8 @@ def areaperimeter():
                 vAR_st.markdown("### ")
                 vAR_st.markdown("### Enter the Base")
             with col2:
-                vAR_h=vAR_st.number_input("",key="rth_inp")
-                vAR_b=vAR_st.number_input("",key="rtb_inp")
+                vAR_h=vAR_st.number_input("",key="rth_inp",min_value=0.00)
+                vAR_b=vAR_st.number_input("",key="rtb_inp",min_value=0.00)
             p2=(vAR_h**2)+(vAR_b**2)
             pa2=math.sqrt(p2)
             pa1=vAR_b+vAR_h
@@ -268,8 +268,8 @@ def areaperimeter():
                 vAR_st.markdown("### ")
                 vAR_st.markdown("### Enter the Diagonal 2")
             with col2:
-                vAR_d1=vAR_st.number_input("",key="rhm_in1")
-                vAR_d2=vAR_st.number_input("",key="rhm_in2")
+                vAR_d1=vAR_st.number_input("",key="rhm_in1",min_value=0.00)
+                vAR_d2=vAR_st.number_input("",key="rhm_in2",min_value=0.00)
             vAR_da=vAR_d1*vAR_d2*0.5
             with bc1:
                 vAR_st.write("")
@@ -290,7 +290,7 @@ def areaperimeter():
                 vAR_st.markdown("### ")
                 vAR_st.markdown("### Value of side")
             with col2:
-                vAR_s=vAR_st.number_input("",key='rhm_p')
+                vAR_s=vAR_st.number_input("",key='rhm_p',min_value=0.00)
             vAR_rhmp=4*vAR_s
             with bc1:
                 vAR_st.write("")
@@ -327,9 +327,9 @@ def areaperimeter():
                 vAR_st.markdown("### ")
                 vAR_st.markdown("### Enter the Height")
             with col2:
-                vAR_b1=vAR_st.number_input("",key='tb1')
-                vAR_b2=vAR_st.number_input("",key='tb2')
-                vAR_h=vAR_st.number_input("",key='th')
+                vAR_b1=vAR_st.number_input("",key='tb1',min_value=0.00)
+                vAR_b2=vAR_st.number_input("",key='tb2',min_value=0.00)
+                vAR_h=vAR_st.number_input("",key='th',min_value=0.00)
             vAR_ta=(vAR_b1+vAR_b2)*(vAR_h*0.5)
             with bc1:
                 vAR_st.write("")
@@ -359,10 +359,10 @@ def areaperimeter():
                 vAR_st.markdown("### ")
                 vAR_st.markdown("### Enter the side 2")
             with col2:
-                vAR_pb1=vAR_st.number_input("",key='tb1_p')
-                vAR_pb2=vAR_st.number_input("",key='tb2_p')
-                vAR_ps1=vAR_st.number_input("",key='ts1')
-                vAR_ps2=vAR_st.number_input("",key='ts2')
+                vAR_pb1=vAR_st.number_input("",key='tb1_p',min_value=0.00)
+                vAR_pb2=vAR_st.number_input("",key='tb2_p',min_value=0.00)
+                vAR_ps1=vAR_st.number_input("",key='ts1',min_value=0.00)
+                vAR_ps2=vAR_st.number_input("",key='ts2',min_value=0.00)
             vAR_tp=vAR_pb1+vAR_pb2+vAR_ps1+vAR_ps2
             with bc1:
                 vAR_st.write("")
