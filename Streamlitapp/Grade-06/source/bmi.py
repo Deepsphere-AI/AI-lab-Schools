@@ -92,7 +92,7 @@ def BMI():
             # print the BMI INDEX
             with col2:
                 bmi=round(bmi,2)
-                vAR_st.subheader("Your BMI Index is {}.".format(bmi))
+                vAR_st.subheader("Your BMI Index is {}".format(bmi))
             if category=='Adult':
                 adultBMI()
             if category=='Child':
