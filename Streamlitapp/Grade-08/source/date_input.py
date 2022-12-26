@@ -26,7 +26,7 @@ def date_to_day():
             st.session_state["Clear_Day"] = ""
         st.button("Clear", on_click=clear_text)   
     with col2:
-        vAR_input_num=st.text_input("",placeholder="mm/dd/yyyy",key="Clear_Day")  
+        vAR_input_num=st.text_input("",placeholder="dd/mm/yyyy",key="Clear_Day")  
     #----- Date to Day -------#
     with bc1:
         st.markdown("")
@@ -46,4 +46,4 @@ def date_to_day():
                     with col1:
                         st.write("# Day ")
                 except BaseException as error:
-                    st.error("Follw this pattern mm/dd/yyyy")
+                    st.error("Follw this pattern dd/mm/yyyy")
