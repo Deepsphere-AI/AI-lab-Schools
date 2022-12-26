@@ -15,7 +15,7 @@ def roundup():
         vAR_st.subheader("Enter the Number")
     
     with col2:
-        num1=vAR_st.number_input('',key='Clear')
+        num1=vAR_st.number_input('',key='Clear',min_value=0.00)
     
     with col1:
         vAR_st.write('')
