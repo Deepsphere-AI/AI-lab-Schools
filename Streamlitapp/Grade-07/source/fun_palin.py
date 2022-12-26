@@ -5,9 +5,7 @@ def prime(b):
             c='not a prime number'
     return c
 def palin(b):
-    a=""
-    for i in b:
-        a=i+a
+    a=b[::-1]
     if a==b:
         vAR_c="is palindrome"
     else:
