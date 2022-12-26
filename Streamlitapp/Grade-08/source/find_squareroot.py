@@ -28,9 +28,9 @@ def square_root():
         if st.button("Submit"):
             with col2:
                 if vAR_input_num == int or float:
-                    square=math.sqrt(vAR_input_num)
-                    square=round(square,4)
-                    st.success(square)
+                    vAR_square=math.sqrt(vAR_input_num)
+                    vAR_square=round(vAR_square,4)
+                    st.success(vAR_square)
                 else:
                     st.error("Error")
                 with col1:
