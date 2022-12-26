@@ -28,7 +28,7 @@ def square():
             with col2:
                 if vAR_input_num !=0:
                     square = vAR_input_num ** 2
-                    square=rount(square,2)
+                    square=round(square,2)
                     st.success(square)
                 else:
                     st.error("Error")
