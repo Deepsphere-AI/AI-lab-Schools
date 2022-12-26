@@ -71,7 +71,7 @@ def tyme():
                         vAR_st.success(vAR_out_time)
                 except ValueError:
                     with col2:
-                        vAR_st.info("Enter the time in 'HH:MM' format")
+                        vAR_st.info("Enter in 'HH:MM' format")
 
         with col4:
             vAR_st.subheader("")
@@ -116,7 +116,7 @@ def tyme():
                             vAR_st.success(vAR_ad)
                     except ValueError:
                         with col2:
-                            vAR_st.info("Enter the time in 'HH:MM' format")
+                            vAR_st.info("Enter in 'HH:MM' format")
             with col4:
                     vAR_st.write("")
                     vAR_st.button("Clear",on_click=cleartext)
