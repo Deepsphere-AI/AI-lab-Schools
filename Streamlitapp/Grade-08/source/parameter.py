@@ -15,7 +15,7 @@ def area_perameter():
     us1,bc1,bc2,us2=st.columns((4,2.5,2.8,6))
     with col1:
         st.markdown("")
-        st.write("# Side of a Square Perimeter ")
+        st.write("# Side of a Square")
     # ------------to create the function to clear the input-----------#
     with bc2:
         st.markdown("")
