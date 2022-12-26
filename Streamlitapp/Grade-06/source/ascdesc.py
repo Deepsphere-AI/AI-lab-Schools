@@ -4,49 +4,73 @@ def ascdesc():
     def asc():
         vAR_c=[]
         flag=0
+        new=[]
         vAR_b=vAR_a.split(",")
         
         with col2:
             if s:
-                for i in vAR_b:
-                    if i.isnumeric():
-                        vAR_c.append(int(i))
-                    else:
-                        vAR_st.info("Enter only integer values")
-                        flag=1
-                        break
-                if flag==0:    
-                    vAR_c.sort()
-                    vAR_res=','.join(str(item) for item in vAR_c)
-                    with col1:
-                        vAR_st.write("")
-                        vAR_st.subheader("Result")
+                try:
+                    for i in vAR_b:
+                        vAR_c.append(float(i))
+                        flag=0
+                            
+                
+                    if flag==0:    
+                        vAR_c.sort()
+                        vAR_res=','.join(str(item) for item in vAR_c)
+                        vAR_res=vAR_res.split(",")
+                        for j in vAR_res:
+                            k=str(j).split(".")
+                            if k[1]=='0':
+                                # k= 3,0
+                                new.append(int(k[0])) 
+                            else:
+                                new.append(float(j))
+                        new_res=','.join(str(item) for item in new)  
+                        with col1:
+                            vAR_st.write("")
+                            vAR_st.subheader("Result")
 
-                    vAR_st.write('')
-                    vAR_st.subheader(vAR_res)
+                        vAR_st.write('')
+                        vAR_st.success(new_res)
+
+                except ValueError:
+                    vAR_st.info("Enter a valid input")
 
     def desc():
         vAR_c=[]
         flag=0
+        new=[]
         vAR_b=vAR_a.split(",")
         with col2:
             if s:
-                for i in vAR_b:
-                    if i.isnumeric():
-                        vAR_c.append(int(i))
-                    else:
-                        vAR_st.info("Enter only numeric values")
-                        flag=1
-                        break
-            
-                if flag==0:
-                    vAR_c.sort(reverse=True)
-                    vAR_res=','.join(str(item) for item in vAR_c)
-                    with col1:
-                        vAR_st.write("")
-                        vAR_st.subheader("Result")
-                    vAR_st.write('')
-                    vAR_st.subheader(vAR_res)
+                try:
+                    for i in vAR_b:
+                        vAR_c.append(float(i))
+                        flag=0
+                            
+                
+                    if flag==0:    
+                        vAR_c.sort(reverse=True)
+                        vAR_res=','.join(str(item) for item in vAR_c)
+                        vAR_res=vAR_res.split(",")
+                        for j in vAR_res:
+                            k=str(j).split(".")
+                            if k[1]=='0':
+                                # k= 3,0
+                                new.append(int(k[0])) 
+                            else:
+                                new.append(float(j))
+                        new_res=','.join(str(item) for item in new)  
+                        with col1:
+                            vAR_st.write("")
+                            vAR_st.subheader("Result")
+
+                        vAR_st.write('')
+                        vAR_st.success(new_res)
+
+                except ValueError:
+                    vAR_st.info("Enter a valid input")
 
 
     cl1,col1,col2,cl2= vAR_st.columns((1,2,2,1))
@@ -94,6 +118,9 @@ def ascdesc():
         
     if selected=="Descending order":
         desc()
+
+
+
 
 
 
