@@ -37,7 +37,7 @@ def average():
                     if vAR_input_num != '':
                         vAR_input_data = vAR_input_num.split(",")
                         for i in vAR_input_data:
-                            num=int(i)
+                            num=float(i)
                             vAR_list.append(num)
                         def Average(vAR_list):
                             vAR_avg= sum(vAR_list) / len(vAR_list)
