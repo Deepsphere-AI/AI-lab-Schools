@@ -29,8 +29,8 @@ def profit_or_loss():
             st.session_state["Clear_Selling"] = 0.00
         st.button("Clear", on_click=clear_text)   
     with col2:
-        vAR_input_num=st.number_input("",min_value=0.00,step=1.0,key="Clear_Cost") 
-        vAR_input_num_1=st.number_input("",min_value=0.00,step=1.0,key="Clear_Selling")  
+        vAR_input_num=st.number_input("",min_value=+0.00,step=1.0,key="Clear_Cost") 
+        vAR_input_num_1=st.number_input("",min_value=+0.00,step=1.0,key="Clear_Selling")  
        
     #----- Average -------#
     with bc1:
