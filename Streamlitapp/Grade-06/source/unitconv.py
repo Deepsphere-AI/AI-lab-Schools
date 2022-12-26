@@ -401,7 +401,7 @@ def unitconversion():
         vAR_st.write('')
         vAR_st.subheader("Enter input")
     with col3:
-        num=vAR_st.number_input("",key="Clear3")
+        num=vAR_st.number_input("",key="Clear3",min_value=0.00)
     with col2:
         vAR_st.write("")
         vAR_st.subheader("From unit")
