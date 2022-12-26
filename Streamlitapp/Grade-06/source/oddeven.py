@@ -44,6 +44,9 @@ def oddeven():
                             with col1:
                                 vAR_st.write("")
                                 vAR_st.subheader("Result")
+                    elif '.' in vAR_num1:
+                        with col2:
+                            vAR_st.info('Enter only whole numbers')
                     else:
                         vAR_st.write('')
                         vAR_st.info("Enter a number")
