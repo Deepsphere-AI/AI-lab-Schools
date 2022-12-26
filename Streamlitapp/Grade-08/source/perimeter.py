@@ -35,10 +35,12 @@ def area_perameter():
                     vAR_input_num=int(vAR_input_num)
                     vAR_parameter=4 * math.sqrt(vAR_input_num)
                     st.markdown("### ")
+                    vAR_parameter = rount(vAR_parameter,2)
                     st.success(vAR_parameter)
                 else:
                     st.markdown("### ")
                     st.error("Error")
                 with col1:
+                    st.markdown("")
                     st.markdown("")
                     st.write("# Perimeter is  ")
