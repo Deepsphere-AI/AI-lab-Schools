@@ -15,7 +15,7 @@ def area_perameter():
     us1,bc1,bc2,us2=st.columns((4,2.5,2.8,6))
     with col1:
         st.markdown("")
-        st.write("# Side of a Square")
+        st.write("# Area of a Square")
     # ------------to create the function to clear the input-----------#
     with bc2:
         st.markdown("")
@@ -33,7 +33,7 @@ def area_perameter():
             with col2:
                 if  vAR_input_num == int or float:
                     vAR_input_num=int(vAR_input_num)
-                    vAR_parameter=4 * math.squrt(vAR_input_num)
+                    vAR_parameter=4 * math.sqrt(vAR_input_num)
                     st.markdown("### ")
                     st.success(vAR_parameter)
                 else:
