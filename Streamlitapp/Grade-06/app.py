@@ -109,7 +109,7 @@ if __name__=="__main__":
         if vAR_selected=="Odd or Even":
             oe.oddeven()
 
-        if vAR_selected=="Multiplication tables":
+        if vAR_selected=="Application for printing multiplication tables":
             tb.tables()
         
         if vAR_selected=="Numbers within a range":
