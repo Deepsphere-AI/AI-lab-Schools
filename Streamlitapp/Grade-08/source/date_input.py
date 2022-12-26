@@ -42,7 +42,7 @@ def date_to_day():
                         vAR_df = pd.Timestamp(vAR_date)
                         st.success(vAR_df.day_name())
                     else:
-                        st.error("Error")
+                        st.error("Enter Valid Input")
                     with col1:
                         st.write("# Day ")
                 except BaseException as error:
