@@ -40,7 +40,7 @@ def tyme():
                         vAR_st.success(vAR_out_time)
                 except ValueError:
                     with col2:
-                        vAR_st.info("Enter the time in 'HH:MM AM/PM' format")
+                        vAR_st.info("Enter in 'HH:MM AM/PM' format")
 
         with col4:
             vAR_st.subheader("")
