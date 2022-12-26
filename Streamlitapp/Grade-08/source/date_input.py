@@ -41,9 +41,10 @@ def date_to_day():
                         vAR_date = pd.to_datetime(vAR_int, format='%d%m%Y')
                         vAR_df = pd.Timestamp(vAR_date)
                         st.success(vAR_df.day_name())
+                        with col1:
+                            st.write("# Day ")
                     else:
                         st.error("Enter Valid Input")
-                    with col1:
-                        st.write("# Day ")
+                    
                 except BaseException as error:
                     st.error("Follw this pattern dd/mm/yyyy")
