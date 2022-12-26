@@ -22,7 +22,7 @@ def primeornot():
         vAR_st.markdown("### ")
         if vAR_st.button("submit"):
             if a.isnumeric():
-                vAR_ans=fpp.prime(a)
+                vAR_ans=fpp.prime(int(a))
                 if vAR_ans=='prime number':
                     with col1:
                         vAR_st.markdown("## ")
