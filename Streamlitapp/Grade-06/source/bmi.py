@@ -91,6 +91,7 @@ def BMI():
         if(vAR_st.button('Submit')):
             # print the BMI INDEX
             with col2:
+                bmi=round(bmi,2)
                 vAR_st.subheader("Your BMI Index is {}.".format(bmi))
             if category=='Adult':
                 adultBMI()
