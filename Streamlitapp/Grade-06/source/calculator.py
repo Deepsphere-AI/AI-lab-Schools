@@ -79,8 +79,8 @@ def calculator():
         vAR_st.subheader("Enter number 2 ")
         
     with col2:
-        num1=vAR_st.number_input("",key="Clear1",min_value=0.00)
-        num2=vAR_st.number_input("",key="Clear2",min_value=0.00)
+        num1=vAR_st.number_input("",key="Clear1")
+        num2=vAR_st.number_input("",key="Clear2")
 
     if vAR_k:
         if vAR_sel=="Select":
