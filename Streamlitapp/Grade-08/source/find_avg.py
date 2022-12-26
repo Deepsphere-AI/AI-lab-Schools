@@ -33,17 +33,20 @@ def average():
         st.markdown("")
         if st.button("Submit"):
             with col2:
-                if vAR_input_num != '':
-                    vAR_input_data = vAR_input_num.split(",")
-                    for i in vAR_input_data:
-                        num=int(i)
-                        vAR_list.append(num)
-                    def Average(vAR_list):
-                        vAR_avg= sum(vAR_list) / len(vAR_list)
-                        vAR_avg=round(vAR_avg,4)
-                        st.success(vAR_avg)
-                    Average(vAR_list)
-                else:
-                    st.error("Error")
-                with col1:
-                     st.write("# Average ")
+                try:
+                    if vAR_input_num != '':
+                        vAR_input_data = vAR_input_num.split(",")
+                        for i in vAR_input_data:
+                            num=int(i)
+                            vAR_list.append(num)
+                        def Average(vAR_list):
+                            vAR_avg= sum(vAR_list) / len(vAR_list)
+                            vAR_avg=round(vAR_avg,4)
+                            st.success(vAR_avg)
+                        Average(vAR_list)
+                    else:
+                        st.error("Error")
+                    with col1:
+                        st.write("# Average ")
+                except BaseException as error:
+                    st.error("Enter the Valid data")
