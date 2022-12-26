@@ -10,11 +10,11 @@ def comparision():
             if vAR_num1>vAR_num2:
                 with col3:
                     vAR_st.write("")
-                    vAR_st.success("A is greater than B")
+                    vAR_st.success("Number 1 is greater than Number 2")
             elif vAR_num1<vAR_num2:
                 with col3:
                     vAR_st.write("")
-                    vAR_st.success("B is greater than A")
+                    vAR_st.success("Number 2 is greater than Number 1")
             else:
                 with col3:
                     vAR_st.write('')
