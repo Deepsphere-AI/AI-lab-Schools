@@ -39,18 +39,18 @@ def profit_or_loss():
         if st.button("Submit"):
             with col2:
                 if vAR_input_num and vAR_input_num_1 == int or float:
-                    cost_price=vAR_input_num
-                    selling_price=vAR_input_num_1
-                    if (selling_price > cost_price):
-                            profit = selling_price - cost_price
+                    vAR_cost_price=vAR_input_num
+                    vAR_selling_price=vAR_input_num_1
+                    if (vAR_selling_price > vAR_cost_price):
+                            vAR_profit = vAR_selling_price - vAR_cost_price
                             with col1:
                                 st.write("# Profit ")
-                            st.success(profit)
-                    elif ( cost_price > selling_price):
-                            loss = cost_price - selling_price
+                            st.success(vAR_profit)
+                    elif ( vAR_cost_price > vAR_selling_price):
+                            vAR_loss = vAR_cost_price - vAR_selling_price
                             with col1:
                                 st.write("# Loss ")
-                            st.warning(loss)
+                            st.warning(vAR_loss)
                     else:
                         st.info("No Profit No Loss")
                 else:
