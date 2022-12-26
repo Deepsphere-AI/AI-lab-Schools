@@ -13,26 +13,31 @@ def numrange():
         vAR_sel=vAR_st.selectbox("",("Select","Within a range","Even within a range",
         "Odd within a range","Interval 3 within a range"),key="clear")
     if vAR_sel=="Within a range":
-        with col2:
-            vAR_st.write('')
-            vAR_st.subheader("Enter numbers from")
-        with col3:
-            vAR_num=int(float(vAR_st.number_input("",step=1.0)))
-        with col2:
-            vAR_st.write('')
-            vAR_st.subheader("Enter numbers upto")
-        with col3:
-            vAR_num2=int(float(vAR_st.number_input("",step=1.0,key="gs")))
-        vAR_s=""
-        for i in range(vAR_num,vAR_num2+1):
-            vAR_s=vAR_s+str(i)+","
-        vAR_ans=""
-        for j in range(len(vAR_s)-1):
-            vAR_ans=vAR_ans+vAR_s[j]
-        if vAR_k:
-            with col3:
-                vAR_st.subheader(vAR_ans)
         
+            with col2:
+                vAR_st.write('')
+                vAR_st.subheader("Enter numbers from")
+            with col3:
+                vAR_num=int(float(vAR_st.number_input("",step=1.0)))
+            with col2:
+                vAR_st.write('')
+                vAR_st.subheader("Enter numbers upto")
+            with col3:
+                vAR_num2=int(float(vAR_st.number_input("",step=1.0,key="gs")))
+            vAR_s=""
+            for i in range(vAR_num,vAR_num2+1):
+                vAR_s=vAR_s+str(i)+","
+            vAR_ans=""
+            for j in range(len(vAR_s)-1):
+                vAR_ans=vAR_ans+vAR_s[j]
+            if vAR_k:
+                with col3:
+                    if vAR_num<=vAR_num2:
+                        vAR_st.subheader(vAR_ans)
+                    elif vAR_num2<vAR_num:
+                        with col3:
+                            vAR_st.info("Second number must be greater than the first number")
+            
     if vAR_sel=="Even within a range":
         with col2:
             vAR_st.write('')
@@ -53,7 +58,11 @@ def numrange():
             vAR_ans=vAR_ans+vAR_s[j]
         if vAR_k:
             with col3:
-                vAR_st.subheader(vAR_ans)
+                if vAR_num<=vAR_num2:
+                        vAR_st.subheader(vAR_ans)
+                elif vAR_num2<vAR_num:
+                    with col3:
+                        vAR_st.info("Second number must be greater than the first number")
 
     if vAR_sel=="Odd within a range":
         with col2:
@@ -75,7 +84,11 @@ def numrange():
             vAR_ans=vAR_ans+vAR_s[j]
         if vAR_k:
             with col3:
-                vAR_st.subheader(vAR_ans)
+                if vAR_num<=vAR_num2:
+                        vAR_st.subheader(vAR_ans)
+                elif vAR_num2<vAR_num:
+                    with col3:
+                        vAR_st.info("Second number must be greater than the first number")
 
     if vAR_sel=="Interval 3 within a range":
         with col2:
@@ -96,13 +109,18 @@ def numrange():
             vAR_ans=vAR_ans+vAR_s[j]
         if vAR_k:
             with col3:
-                vAR_st.subheader(vAR_ans)
+                if vAR_num<=vAR_num2:
+                        vAR_st.subheader(vAR_ans)
+                elif vAR_num2<vAR_num:
+                    with col3:
+                        vAR_st.info("Second number must be greater than the first number")
 
     def cleartext():
         vAR_st.session_state["clear"]="Select"
 
     with col7:
         vAR_st.button("Clear",on_click=cleartext)
+
 
 
 
