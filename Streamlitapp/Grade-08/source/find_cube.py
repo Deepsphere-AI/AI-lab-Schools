@@ -32,9 +32,9 @@ def cube():
             with col2:
                 if vAR_input_num == int or float:
                     vAR_input_num=int(vAR_input_num)
-                    cube=lambda vAR_x: vAR_x**3
-                    cube=cube(vAR_input_num)
-                    st.success(cube)
+                    vAR_cube=lambda vAR_x: vAR_x**3
+                    vAR_cube=vAR_cube(vAR_input_num)
+                    st.success(vAR_cube)
                 else:
                     st.error("Error")
                 with col1:
