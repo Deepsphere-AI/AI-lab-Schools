@@ -48,16 +48,22 @@ def datatype():
         
         elif "." in vAR_name:
                 vAR_a=vAR_name.split(".")
-                try:
-                    vAR_b = int(vAR_a[0])
-                    vAR_c = int(vAR_a[1])
-                    with col3:
-                        vAR_st.subheader("Data type")
-                    with col4:
-                        vAR_st.success("Float")
-                except:
+                if len(vAR_a)==2:
+                    try:
+                        vAR_b = int(vAR_a[0])
+                        vAR_c = int(vAR_a[1])
+                        with col3:
+                            vAR_st.subheader("Data type")
+                        with col4:
+                            vAR_st.success("Float")
+                    except:
+                        with col4:
+                            vAR_st.info("Enter a valid input")
+
+                else:
                     with col4:
                         vAR_st.info("Enter a valid input")
+                 
         
         elif vAR_name.isalnum()==True:
             with col4:
