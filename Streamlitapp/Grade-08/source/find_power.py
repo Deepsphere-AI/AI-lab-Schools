@@ -36,8 +36,8 @@ def power_value():
                 try:
                     if vAR_input_num !='':
                         vAR_split=vAR_input_num.split('^')
-                        vAR_num=int(vAR_split[0])
-                        vAR_power=int(vAR_split[1])
+                        vAR_num=float(vAR_split[0])
+                        vAR_power=float(vAR_split[1])
                         vAR_ans=pow(vAR_num, vAR_power)
                         st.markdown("")
                         st.markdown("")
