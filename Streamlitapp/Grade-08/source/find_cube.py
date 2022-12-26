@@ -23,7 +23,7 @@ def cube():
             st.session_state["Clear_Cube"] = 0
         st.button("Clear", on_click=clear_text)   
     with col2:
-        vAR_input_num=st.number_input("",min_value=0.00,step=1.0,key="Clear_Cube")  
+        vAR_input_num=st.number_input("",step=1.0,key="Clear_Cube")  
     #-----cube-------#
     with bc1:
         st.markdown("")
@@ -31,9 +31,7 @@ def cube():
         if st.button("Submit"):
             with col2:
                 if vAR_input_num == int or float:
-                    vAR_input_num=int(vAR_input_num)
-                    vAR_cube=lambda vAR_x: vAR_x**3
-                    vAR_cube=vAR_cube(vAR_input_num)
+                    vAR_cube= vAR_input_num**3
                     st.success(vAR_cube)
                 else:
                     st.error("Error")
