@@ -25,7 +25,7 @@ def age():
             st.session_state["Clear_Age"] = date.today()
         st.button("Clear", on_click=clear_text)   
     with col2:
-        vAR_input_num=st.date_input("",min_value=pd.to_datetime('1900-01-01', format='%Y-%m-%d'),max_value=date.today(),key="Clear_Age")  
+        vAR_input_num=st.date_input("",min_value=pd.to_datetime('1000-01-01', format='%Y-%m-%d'),max_value=date.today(),key="Clear_Age")  
     #-----squreroot-------#
     with bc1:
         st.markdown("")
