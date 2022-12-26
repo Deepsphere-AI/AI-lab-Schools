@@ -36,8 +36,12 @@ def tables():
                         vAR_st.subheader(vAR_y)
                     with col1:
                         vAR_st.subheader("ㅤㅤㅤTables")
+                elif "." in vAR_input_number:
+                    vAR_st.info("Enter a whole number")
                 elif vAR_input_number==str(vAR_input_number):
-                    vAR_st.subheader("Enter a number")
+                    vAR_st.info("Enter a number")
                 else:
-                    vAR_st.subheader("Enter a number")
+                    vAR_st.info("Enter a number")
+
+
                 
