@@ -9,7 +9,7 @@ def datatype():
     col7, col1, col2, col8 = vAR_st.columns((1,2,2,1))
     with col2:
         vAR_st.write('')
-        vAR_name = vAR_st.text_input("",key="clear",placeholder="Eg: HELLO, 20 or 20.2")
+        vAR_name = vAR_st.text_input("",key="clear")
     
     with col1:
         vAR_st.write("")
