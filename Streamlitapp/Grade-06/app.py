@@ -61,7 +61,7 @@ if vAR_selected=="Sorting order":
     vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application for Sorting numbers</p>", unsafe_allow_html=True)
 if vAR_selected=="Odd or Even":
     vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find ODD or EVEN</p>", unsafe_allow_html=True)
-if vAR_selected=="Tables":
+if vAR_selected=="Multiplication tables":
     vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application for printing multiplication tables</p>", unsafe_allow_html=True)
 if vAR_selected=="Numbers within a range":
     vAR_st.markdown("<p font='IBM Flex Sans'; style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to print numbers within a range</p>", unsafe_allow_html=True)
@@ -109,7 +109,7 @@ if __name__=="__main__":
         if vAR_selected=="Odd or Even":
             oe.oddeven()
 
-        if vAR_selected=="Application for printing multiplication tables":
+        if vAR_selected=="Multiplication tables":
             tb.tables()
         
         if vAR_selected=="Numbers within a range":
