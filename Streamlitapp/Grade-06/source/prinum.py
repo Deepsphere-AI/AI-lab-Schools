@@ -17,12 +17,12 @@ def numrange():
             vAR_st.write('')
             vAR_st.subheader("Enter numbers from")
         with col3:
-            vAR_num=int(float(vAR_st.number_input("")))
+            vAR_num=int(float(vAR_st.number_input("",step=1.0)))
         with col2:
             vAR_st.write('')
             vAR_st.subheader("Enter numbers upto")
         with col3:
-            vAR_num2=int(float(vAR_st.number_input("",key="gs")))
+            vAR_num2=int(float(vAR_st.number_input("",step=1.0,key="gs")))
         vAR_s=""
         for i in range(vAR_num,vAR_num2+1):
             vAR_s=vAR_s+str(i)+","
@@ -38,12 +38,12 @@ def numrange():
             vAR_st.write('')
             vAR_st.subheader("Enter the number")
         with col3:
-            vAR_num=int(float(vAR_st.number_input("")))
+            vAR_num=int(float(vAR_st.number_input("",step=1.0)))
         with col2:
             vAR_st.write('')
             vAR_st.subheader("Enter numbers upto")
         with col3:
-            vAR_num2=int(float(vAR_st.number_input("",key="g")))
+            vAR_num2=int(float(vAR_st.number_input("",step=1.0,key="g")))
         vAR_s=""
         for i in range(vAR_num,vAR_num2+1):
             if i%2==0:
@@ -60,12 +60,12 @@ def numrange():
             vAR_st.write('')
             vAR_st.subheader("Enter the number")
         with col3:
-            vAR_num=int(float(vAR_st.number_input("")))
+            vAR_num=int(float(vAR_st.number_input("",step=1.0)))
         with col2:
             vAR_st.write('')
             vAR_st.subheader("Enter numbers upto")
         with col3:
-            vAR_num2=int(float(vAR_st.number_input("",key="ws")))
+            vAR_num2=int(float(vAR_st.number_input("",step=1.0,key="ws")))
         vAR_s=""
         for i in range(vAR_num,vAR_num2+1):
             if i%2!=0:
@@ -82,12 +82,12 @@ def numrange():
             vAR_st.write('')
             vAR_st.subheader("Enter the number")
         with col3:
-            vAR_num=int(float(vAR_st.number_input("")))
+            vAR_num=int(float(vAR_st.number_input("",step=1.0)))
         with col2:
             vAR_st.write('')
             vAR_st.subheader("Enter numbers upto")
         with col3:
-            vAR_num2=int(float(vAR_st.number_input("",key="ls")))
+            vAR_num2=int(float(vAR_st.number_input("",step=1.0,key="ls")))
         vAR_s=""
         for i in range(vAR_num,vAR_num2+1,3):
             vAR_s=vAR_s+str(i)+","
