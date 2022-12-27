@@ -7,7 +7,7 @@ def prime(b):
 def palin(b):
     a=b[::-1]
     if a==b:
-        vAR_c="is palindrome"
+        vAR_c="Palindrome"
     else:
-        vAR_c="not a palindrome"
+        vAR_c="not a Palindrome"
     return vAR_c
