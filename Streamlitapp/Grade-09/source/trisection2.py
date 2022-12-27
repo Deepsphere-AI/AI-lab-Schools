@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import math
 import source.title_1 as head
-def midpoint_1():
+def trisection_1():
     head.title()
     st.markdown("<p style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find the Midpoint </p>", unsafe_allow_html=True)
     st.markdown("<hr style=height:2.5px;background-color:gray>",unsafe_allow_html=True)
