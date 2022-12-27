@@ -23,14 +23,14 @@ def palindrome():
                     if vAR_pal=="is palindrome":
                         with col1:
                             vAR_st.markdown("## ")
-                            vAR_st.markdown("### Answer is")
+                            vAR_st.markdown("### Result")
                         with col2:
                             vAR_st.write("")
                             vAR_st.success(vAR_pal)      
                     else:
                         with col1:
                             vAR_st.markdown("## ")
-                            vAR_st.markdown("### Answer is ")
+                            vAR_st.markdown("### Result")
                         with col2:
                             vAR_st.write("")
                             vAR_st.warning(vAR_pal)   
