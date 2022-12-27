@@ -12,7 +12,7 @@ import source.Sphere as sphere
 import source.mid_point as md
 import source.union as uni
 import source.trisection2 as tri
-with open('style/final.css') as f:
+with open('/app/ai-lab-schools/Streamlitapp/Grade-09/style/final.css') as f:
         st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=True)
 imcol1, imcol2, imcol3 = st.columns((2,5,3))
 with imcol1:
