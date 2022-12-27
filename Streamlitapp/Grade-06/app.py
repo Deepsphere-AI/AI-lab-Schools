@@ -74,7 +74,7 @@ if vAR_selected=="Time":
 vAR_st.write("")
 vAR_st.write("")
 vAR_st.markdown("""
-<hr style="width:100%;height:3px;background-color:gray;border-width:10">
+<hr style="width:100%;height:2px;background-color:gray;border-width:10">
 """, unsafe_allow_html=True)
 
 #for opening the css file
