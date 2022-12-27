@@ -40,7 +40,7 @@ def midpoint_1():
         if st.button("Submit"):
             with col2:
                 #if vAR_input_x1 and vAR_input_x2 and vAR_input_y1 and vAR_input_y2 !=0:
-                    vAR_mid=((vAR_input_x1 + vAR_input_x2) // 2,(vAR_input_y1 + vAR_input_y2) // 2)        
+                    vAR_mid=((vAR_input_x1 + vAR_input_x2) / 2,(vAR_input_y1 + vAR_input_y2) / 2)        
                     st.success(vAR_mid)                
         #else:
             #st.error("Error")
