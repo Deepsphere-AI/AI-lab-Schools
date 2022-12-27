@@ -23,6 +23,7 @@ def roundup():
         vAR_st.subheader("Rounding off to")
     
     with col2:
+        vAR_st.write('')
         category= vAR_st.selectbox('',('Nearest 10s','Nearest 100s','Nearest 1000s'),key='Clear2')
     col3,col4,col5,col6=vAR_st.columns((5,2,2,5))
 
