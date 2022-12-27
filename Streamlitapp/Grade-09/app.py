@@ -10,7 +10,7 @@ import source.Cylinder as cylinder
 import source.Cone as cone
 import source.Sphere as sphere
 import source.mid_point as md
-# import source.union as uni
+import source.union as uni
 with open('style/final.css') as f:
         st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=True)
 imcol1, imcol2, imcol3 = st.columns((2,5,3))
@@ -52,8 +52,8 @@ if __name__ == "__main__":
             sphere.sphere_1()
         if selected =="Mid Point":
             md.midpoint_1()
-        # if selected =="Union & Intersection":
-        #     uni.uni_int()
+        if selected =="Union & Intersection":
+            uni.uni_int()
         
     except BaseException as error:
         st.error(error)
