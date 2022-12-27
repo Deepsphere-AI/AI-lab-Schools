@@ -44,7 +44,7 @@ def trisection_1():
                     st.success(vAR_mid)
             with col2:
                 #if vAR_input_x1 and vAR_input_x2 and vAR_input_y1 and vAR_input_y2 !=0:
-                    vAR_mid2=((vAR_input_x1 + 2*(vAR_input_x2)) // 3,(vAR_input_y1 + 2*(vAR_input_y2)) // 3)        
+                    vAR_mid2=((vAR_input_x1 + (2*(vAR_input_x2))) // 3,(vAR_input_y1 + (2*(vAR_input_y2))) // 3)        
                     st.success(vAR_mid2)
 
                 #else:
