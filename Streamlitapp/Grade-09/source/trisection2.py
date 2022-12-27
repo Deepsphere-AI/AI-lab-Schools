@@ -12,9 +12,9 @@ def trisection_1():
         st.markdown("")
         st.write("# Enter the x1 ")
         st.markdown("### ")
-        st.write("# Enter the x2 ")
-        st.markdown("### ")
         st.write("# Enter the y1 ")
+        st.markdown("### ")
+        st.write("# Enter the x2 ")
         st.markdown("### ")
         st.write("# Enter the y2 ")
     # ------------to create the function to clear the input-----------#
@@ -23,14 +23,14 @@ def trisection_1():
         st.markdown("")
         def clear_text():
             st.session_state["Clear_x1"] = 0
-            st.session_state["Clear_x2"] = 0
             st.session_state["Clear_y1"] = 0
+            st.session_state["Clear_x2"] = 0
             st.session_state["Clear_y2"] = 0
         st.button("Clear", on_click=clear_text)   
     with col2:
         vAR_input_x1=st.number_input("",step=1.0,key="Clear_x1") 
-        vAR_input_x2=st.number_input("",step=1.0,key="Clear_x2")
-        vAR_input_y1=st.number_input("",step=1.0,key="Clear_y1")
+        vAR_input_x2=st.number_input("",step=1.0,key="Clear_y1")
+        vAR_input_y1=st.number_input("",step=1.0,key="Clear_x2")
         vAR_input_y2=st.number_input("",step=1.0,key="Clear_y2") 
         
     #--------------------------#
