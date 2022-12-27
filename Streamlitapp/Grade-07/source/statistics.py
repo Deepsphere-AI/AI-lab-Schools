@@ -32,7 +32,7 @@ def mean(vAR_a):
                     vAR_mean=vAR_sum/len(vAR_c)
                     with col1:
                         vAR_st.markdown("### ")
-                        vAR_st.markdown("### Answer is")
+                        vAR_st.markdown("### Mean")
                     with col2:
                         vAR_st.write("")
                         vAR_st.success(vAR_mean)
@@ -63,7 +63,7 @@ def median(vAR_a):
                     vAR_med=np.median(vAR_c)
                     with col1:
                         vAR_st.markdown("### ")
-                        vAR_st.markdown("### Answer is")
+                        vAR_st.markdown("### Median")
                     with col2:
                         vAR_st.write("")
                         vAR_st.success(vAR_med)
@@ -94,7 +94,7 @@ def mode(vAR_a):
                     vAR_mod=max(set(vAR_c),key=vAR_c.count)
                     with col1:
                         vAR_st.markdown("### ")
-                        vAR_st.markdown("### Answer is")
+                        vAR_st.markdown("### Mode")
                     with col2:
                         vAR_st.write("")
                         vAR_st.success(vAR_mod)
