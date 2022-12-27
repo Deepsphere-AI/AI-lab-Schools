@@ -10,14 +10,14 @@ def roundup():
     cl1,col1,col2,cl2= vAR_st.columns((1,2,2,1))
     
     with col1:
-        vAR_st.write('')
+    
         vAR_st.subheader("Enter the Number")
     
     with col2:
         num1=vAR_st.number_input('',key='Clear')
     
     with col1:
-        vAR_st.write('')
+        
         vAR_st.subheader("Rounding off to")
     
     with col2:
