@@ -1,9 +1,9 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
-import math
-import source.title_1 as head
+#from streamlit_option_menu import option_menu
+#import math
+#import source.title_1 as head
 def trisection_1():
-    head.title()
+    #head.title()
     st.markdown("<p style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find the Midpoint </p>", unsafe_allow_html=True)
     st.markdown("<hr style=height:2.5px;background-color:gray>",unsafe_allow_html=True)
     w1,col1,col2,w2=st.columns((1,2,2,1))
@@ -29,8 +29,8 @@ def trisection_1():
         st.button("Clear", on_click=clear_text)   
     with col2:
         vAR_input_x1=st.number_input("",step=1.0,key="Clear_x1") 
-        vAR_input_x2=st.number_input("",step=1.0,key="Clear_y1")
-        vAR_input_y1=st.number_input("",step=1.0,key="Clear_x2")
+        vAR_input_y1=st.number_input("",step=1.0,key="Clear_y1")
+        vAR_input_x2=st.number_input("",step=1.0,key="Clear_x2")
         vAR_input_y2=st.number_input("",step=1.0,key="Clear_y2") 
         
     #--------------------------#
@@ -44,11 +44,12 @@ def trisection_1():
                     st.success(vAR_mid)
             with col2:
                 #if vAR_input_x1 and vAR_input_x2 and vAR_input_y1 and vAR_input_y2 !=0:
-                    vAR_mid2=((vAR_input_x1 + (2*(vAR_input_x2))) // 3,(vAR_input_y1 + (2*(vAR_input_y2))) // 3)        
+                    vAR_mid2=((vAR_input_x1 + 2*(vAR_input_x2)) // 3,(vAR_input_y1 + 2*(vAR_input_y2)) // 3)        
                     st.success(vAR_mid2)
 
-                #else:
-                    #st.error("Error")
-            with col1:
-                st.write("# Result ")
-           
+        #else:
+         #   st.error("Error")
+        with col1:
+        
+            st.write("# Result ")
+
