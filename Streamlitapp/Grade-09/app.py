@@ -18,7 +18,7 @@ imcol1, imcol2, imcol3 = st.columns((2,5,3))
 with imcol1:
     st.write("")
 with imcol2:
-    st.image('image/Logo_final.png')
+    st.image('/app/ai-lab-schools/Streamlitapp/Grade-09/image/Logo_final.png')
 with imcol3:
     st.write("")
 #---------Side bar-------#
