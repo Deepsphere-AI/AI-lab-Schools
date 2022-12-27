@@ -1,5 +1,5 @@
 import streamlit as vAR_st
-
+import source.title_1 as head
 def clr_ins():
     vAR_st.session_state['set1']=""
     vAR_st.session_state['set2']=""
@@ -78,4 +78,4 @@ def uni_int():
         union(a,b)
     if selected=="Intersection":
         intersec(a,b)
-uni_int()
+
