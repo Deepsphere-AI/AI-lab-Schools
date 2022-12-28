@@ -72,10 +72,9 @@ def calculator():
             
     
     with col1:
-        vAR_st.write('')
-        vAR_st.write('')
+        vAR_st.write('##')
         vAR_st.subheader("Enter number 1 ") 
-        vAR_st.write('')  
+        vAR_st.write('###')  
         vAR_st.subheader("Enter number 2 ")
         
     with col2:
