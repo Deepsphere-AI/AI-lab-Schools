@@ -22,7 +22,7 @@ def cube_1():
     with col2:
         vAR_input_area=st.number_input("",min_value=0.00,step=1.0,key="Clear_area") 
         selected = st.selectbox("",
-                            ["Select","Surface Area","Volume"],key="cube_selectbox")
+                            ["Surface Area","Volume"],key="cube_selectbox")
         
     #-----cuboid-------#
     with bc1:
