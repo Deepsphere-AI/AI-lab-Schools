@@ -6,22 +6,27 @@ def clr_ins():
 def union(a,b):
     w1,col1,col2,w2=vAR_st.columns((1,2,2,1))
     us1,bc1,bc2,us2=vAR_st.columns((4,1.4,1.4,4))
-    a=a.split(",")
-    b=b.split(",")
-    c=set(a)
-    d=set(b)
+    e=a.split(",")
+    f=b.split(",")
+    c=set(e)
+    d=set(f)
     with bc1:
         vAR_st.write("")
         vAR_button=vAR_st.button("Submit") 
         if vAR_button:
             try:
-                if a=="" or b=="":
-                        with col2:
-                            vAR_st.info("Enter the values separated by comma")
+                if b=="" or a=='':
+                    with col2:
+                        vAR_st.info("Enter the values separated by comma")
                 else:
                     z = c.union(d)
-                    with col2:
-                        vAR_st.success(z)
+                    if z=='':
+                        with col2:
+                            vAR_st.info("Enter the input")                           
+                    else:
+                        with col2:
+                            vAR_st.success(z)
+
             except BaseException as er:
                 with col2:
                     vAR_st.info("Invalid input")
@@ -31,22 +36,27 @@ def union(a,b):
 def intersec(a,b):
     w1,col1,col2,w2=vAR_st.columns((1,2,2,1))
     us1,bc1,bc2,us2=vAR_st.columns((4,1.5,1.5,4))  
-    a=a.split(",")
-    b=b.split(",")
-    c=set(a)
-    d=set(b)
+    e=a.split(",")
+    f=b.split(",")
+    c=set(e)
+    d=set(f)
     with bc1:
         vAR_st.write("")
         vAR_button=vAR_st.button("Submit") 
         if vAR_button:
             try:
-                if a=="" or b=="":
-                        with col2:
-                            vAR_st.info("Enter the values separated by comma")
+                if b=="" or a=='':
+                    with col2:
+                        vAR_st.info("Enter the values separated by comma")
                 else:
                     y = c.intersection(d)
-                    with col2:
-                        vAR_st.success(y)
+                    if y:
+                        with col2:
+                            vAR_st.success(y)
+                         
+                    else:
+                        with col2:
+                            vAR_st.info("No Intersection")
             except BaseException as er:
                 with col2:
                     vAR_st.info("Invalid input")
@@ -62,7 +72,7 @@ def uni_int():
     us1,bc1,bc2,us2=vAR_st.columns((4,1.4,1.4,4))
         
     with col1:
-        vAR_st.markdown("### ")
+        vAR_st.markdown("## ")
         vAR_st.markdown("### Set A")
         
         vAR_st.markdown("## ")
