@@ -20,32 +20,53 @@ def BMI():
         status = vAR_st.selectbox('',('cms','meters','feet'),key='clear6')
     
     col1,col2,col3=vAR_st.columns((0.5,3.6,0.6))
+    col3,col4,col5,col6= vAR_st.columns((5,2,2,5))
+    with col4:
+        vAR_st.write("")
+        vAR_K=vAR_st.button('Submit')
+
     with col2:
-        weight = vAR_st.slider("Select your weight(in kgs)",1,200,key='clear2')
+        weight = vAR_st.slider("Select your weight(in kgs)",0,200,key='clear2')
     
     if status=='cms':
         with col2:
-            height = vAR_st.slider("Select your height",1,240,key='clear3')
-            bmi = weight/((height/100)**2)
+            
+            height = vAR_st.slider("Select your height",0,240,key='clear3')
+            if vAR_K:
+                try:
+                    bmi = weight/((height/100)**2)
+                except ZeroDivisionError:
+                    vAR_st.info("Height or weight cannot be zero")
     
     elif status=="meters":
         with col2:
-            height = vAR_st.slider("Select your height",1.0,10.0,key='clear4')
-            bmi = weight/(height**2)
+            
+            height = vAR_st.slider("Select your height",0.0,10.0,key='clear4')
+            if vAR_K:
+                try:
+                    bmi = weight/(height**2)
+                except ZeroDivisionError:
+                    vAR_st.info("Height or weight cannot be zero")
+
     
     else:
         with col2:
-            height= vAR_st.slider("Select your height",1.0,10.0,key='clear5')
-            bmi = weight/((height/3.28)**2)
+            
+            height= vAR_st.slider("Select your height",0.0,10.0,key='clear5')
+            if vAR_K:
+                try:
+                    bmi = weight/((height/3.28)**2)
+                except ZeroDivisionError:
+                    vAR_st.info("Height or weight cannot be zero")
 
     
     
     def clear_text():
         vAR_st.session_state["clear"]=""
-        vAR_st.session_state['clear2']=1
-        vAR_st.session_state['clear3']=1
-        vAR_st.session_state['clear4']=1.0
-        vAR_st.session_state['clear5']=1.0
+        vAR_st.session_state['clear2']=0
+        vAR_st.session_state['clear3']=0
+        vAR_st.session_state['clear4']=0.0
+        vAR_st.session_state['clear5']=0.0
         vAR_st.session_state['clear6']='cms'
 
     col6,col7,col8=vAR_st.columns((0.1,2,0.1))
@@ -84,11 +105,11 @@ def BMI():
             with col7:
                 vAR_st.error("Extremely Overweight")
 
-    col3,col4,col5,col6= vAR_st.columns((5,2,2,5))
+    #col3,col4,col5,col6= vAR_st.columns((5,2,2,5))
     
-    with col4:
-        vAR_st.write("")
-        if(vAR_st.button('Submit')):
+    #with col4:
+        #vAR_st.write("")
+        #if(vAR_st.button('Submit')):
             # print the BMI INDEX
             with col2:
                 bmi=round(bmi,2)
