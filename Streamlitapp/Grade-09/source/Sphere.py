@@ -20,7 +20,7 @@ def sphere_1():
         st.markdown("")
         def clear_text():
             st.session_state["Clear_sphere_Radius"] = 0
-            st.session_state["sphere_selectbox"] = "Select"
+            st.session_state["sphere_selectbox"] = "Surface Area"
         st.button("Clear", on_click=clear_text)   
     with col2:
         vAR_input_Radius=st.number_input("",min_value=0.00,step=1.0,key="Clear_sphere_Radius") 
