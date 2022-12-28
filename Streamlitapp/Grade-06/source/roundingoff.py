@@ -18,8 +18,7 @@ def roundup():
         num1=vAR_st.number_input('',key='Clear')
     
     with col1:
-        vAR_st.write('')
-        
+        vAR_st.write('### ')
         vAR_st.subheader("Rounding off to")
     
     with col2:
