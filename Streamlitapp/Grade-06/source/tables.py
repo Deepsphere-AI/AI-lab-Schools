@@ -6,9 +6,8 @@ def tables():
     w1,col1,col2,w2=vAR_st.columns((1,2,2,1))
     us1,bc1,bc2,us2=vAR_st.columns((5,2,2,5))
     with col1:
-        vAR_st.write("")
-        vAR_st.write("")
-        vAR_st.write('')
+        vAR_st.write("###")
+        vAR_st.write("###")
         vAR_st.subheader("Enter the Number ")
   
     with bc2:
