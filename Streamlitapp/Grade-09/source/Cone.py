@@ -47,7 +47,4 @@ def cone_1():
                 else:
                     st.error("Error")
                 with col1:
-                    st.markdown("")
-                    st.markdown("# ")
-                    st.markdown("# ")
                     st.write("# Result ")
