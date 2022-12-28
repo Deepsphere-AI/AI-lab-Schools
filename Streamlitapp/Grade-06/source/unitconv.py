@@ -397,19 +397,17 @@ def unitconversion():
 
     col1,col2,col3,col4=vAR_st.columns((1,2,2,1))
     with col2:
-        vAR_st.write("")
-        vAR_st.write('')
+        vAR_st.write("####")
         vAR_st.subheader("Enter input")
     with col3:
-        num=vAR_st.number_input("",key="Clear3",min_value=0.00)
+        num=vAR_st.number_input("",key="Clear3")
     with col2:
-        vAR_st.write("")
+        vAR_st.write("####")
         vAR_st.subheader("From unit")
     with col3:
         vAR_select=vAR_st.selectbox("",("Select the unit","Kilometer","Hectometer","Decameter","Meter","Decimeter","Centimeter","Millimeter"),key="Clear")
     with col2:
-        vAR_st.write("")
-        vAR_st.write('')
+        vAR_st.write("###")
         vAR_st.subheader("To unit")
     with col3:
         if vAR_select=="Kilometer":
