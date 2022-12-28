@@ -40,7 +40,7 @@ def tyme():
                         vAR_st.success(vAR_out_time)
                 except ValueError:
                     with col2:
-                        vAR_st.info("Enter in 'HH:MM AM/PM' format")
+                        vAR_st.info("Enter the time in 'HH:MM AM/PM' format")
 
         with col4:
             vAR_st.subheader("")
@@ -71,7 +71,7 @@ def tyme():
                         vAR_st.success(vAR_out_time)
                 except ValueError:
                     with col2:
-                        vAR_st.info("Enter in 'HH:MM' format")
+                        vAR_st.info("Enter the time in 'HH:MM' format")
 
         with col4:
             vAR_st.subheader("")
@@ -93,8 +93,7 @@ def tyme():
                 vAR_st.write('')
                 vAR_st.write('')
                 vAR_st.subheader("Time 1")
-                vAR_st.write('')
-                vAR_st.write("")
+                vAR_st.write('### ')
                 vAR_st.subheader("Time 2")
             with col2:
                 vAR_t1=vAR_st.text_input("",key="clear2",placeholder="HH:MM")
@@ -116,7 +115,7 @@ def tyme():
                             vAR_st.success(vAR_ad)
                     except ValueError:
                         with col2:
-                            vAR_st.info("Enter in 'HH:MM' format")
+                            vAR_st.info("Enter the time in 'HH:MM' format")
             with col4:
                     vAR_st.write("")
                     vAR_st.button("Clear",on_click=cleartext)
@@ -125,10 +124,11 @@ def tyme():
             w1,col1,col2,w2=vAR_st.columns((1,2,2,1))
             w3,col3,col4,w4=vAR_st.columns((5,2,2,5))
             with col1:
-                vAR_st.subheader("")
+                vAR_st.write('')
+                vAR_st.write('')
                 vAR_st.subheader("Time 1")
-                vAR_st.markdown("")
-                vAR_st.subheader("TIme 2")
+                vAR_st.write('### ')
+                vAR_st.subheader("Time 2")
             with col2:
                 vAR_t1=vAR_st.text_input("",key="clear2",placeholder="HH:MM")
                 vAR_t2=vAR_st.text_input("",key="clear3",placeholder="HH:MM")
