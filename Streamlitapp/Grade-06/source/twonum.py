@@ -10,11 +10,11 @@ def comparision():
             if vAR_num1>vAR_num2:
                 with col3:
                     vAR_st.write("")
-                    vAR_st.success("Number 1 is greater than Number 2")
+                    vAR_st.success("A is greater than B")
             elif vAR_num1<vAR_num2:
                 with col3:
                     vAR_st.write("")
-                    vAR_st.success("Number 2 is greater than Number 1")
+                    vAR_st.success("B is greater than A")
             else:
                 with col3:
                     vAR_st.write('')
@@ -23,14 +23,12 @@ def comparision():
 
     col1,col2,col3,col4=vAR_st.columns((1,2,2,1))
     with col2:
-        vAR_st.write("")
-        vAR_st.write("")
+        vAR_st.write("##")
         vAR_st.markdown("### Enter number 1")
     with col3:
         vAR_num1=vAR_st.number_input("",key="Clear")
     with col2:
-        vAR_st.write("")
-        vAR_st.write("")
+        vAR_st.write("#")
         vAR_st.markdown("### Enter number 2")
     with col3:
         vAR_num2=vAR_st.number_input("",key="Clear2")
