@@ -15,12 +15,12 @@ def numrange():
     if vAR_sel=="Within a range":
         
             with col2:
-                vAR_st.write('')
+                vAR_st.write('###')
                 vAR_st.subheader("Enter numbers from")
             with col3:
                 vAR_num=int(float(vAR_st.number_input("",step=1.0)))
             with col2:
-                vAR_st.write('')
+                vAR_st.write('###')
                 vAR_st.subheader("Enter numbers upto")
             with col3:
                 vAR_num2=int(float(vAR_st.number_input("",step=1.0,key="gs")))
@@ -40,12 +40,12 @@ def numrange():
             
     if vAR_sel=="Even within a range":
         with col2:
-            vAR_st.write('')
+            vAR_st.write('###')
             vAR_st.subheader("Enter the number")
         with col3:
             vAR_num=int(float(vAR_st.number_input("",step=1.0)))
         with col2:
-            vAR_st.write('')
+            vAR_st.write('###')
             vAR_st.subheader("Enter numbers upto")
         with col3:
             vAR_num2=int(float(vAR_st.number_input("",step=1.0,key="g")))
@@ -66,12 +66,12 @@ def numrange():
 
     if vAR_sel=="Odd within a range":
         with col2:
-            vAR_st.write('')
+            vAR_st.write('###')
             vAR_st.subheader("Enter the number")
         with col3:
             vAR_num=int(float(vAR_st.number_input("",step=1.0)))
         with col2:
-            vAR_st.write('')
+            vAR_st.write('###')
             vAR_st.subheader("Enter numbers upto")
         with col3:
             vAR_num2=int(float(vAR_st.number_input("",step=1.0,key="ws")))
@@ -92,12 +92,12 @@ def numrange():
 
     if vAR_sel=="Interval 3 within a range":
         with col2:
-            vAR_st.write('')
+            vAR_st.write('###')
             vAR_st.subheader("Enter the number")
         with col3:
             vAR_num=int(float(vAR_st.number_input("",step=1.0)))
         with col2:
-            vAR_st.write('')
+            vAR_st.write('###')
             vAR_st.subheader("Enter numbers upto")
         with col3:
             vAR_num2=int(float(vAR_st.number_input("",step=1.0,key="ls")))
@@ -120,6 +120,7 @@ def numrange():
 
     with col7:
         vAR_st.button("Clear",on_click=cleartext)
+
 
 
 
