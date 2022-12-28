@@ -88,13 +88,12 @@ def ascdesc():
 
 
     with col1:
-        vAR_st.write('')
-        vAR_st.write('')
+        vAR_st.write('##')
         vAR_st.subheader("Enter the numbers")
     with col2:
         vAR_a=vAR_st.text_input("",key="Clear",placeholder="Eg: 1,2,3,4,5")
     with col1:
-        vAR_st.write('')
+        vAR_st.write('###')
         vAR_st.subheader(" Sorting Order")
     with col2:
         selected=vAR_st.selectbox("",("Select","Ascending order","Descending order"),key="Clear2")
