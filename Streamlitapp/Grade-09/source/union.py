@@ -5,7 +5,7 @@ def clr_ins():
     vAR_st.session_state['set2']=""
 def union(a,b):
     w1,col1,col2,w2=vAR_st.columns((1,2,2,1))
-    us1,bc1,bc2,us2=vAR_st.columns((4,2.8,2.8,6))
+    us1,bc1,bc2,us2=vAR_st.columns((4,3,3,6))
     e=a.split(",")
     f=b.split(",")
     c=set(e)
@@ -35,7 +35,7 @@ def union(a,b):
         vAR_st.button("Clear", on_click=clr_ins)
 def intersec(a,b):
     w1,col1,col2,w2=vAR_st.columns((1,2,2,1))
-    us1,bc1,bc2,us2=vAR_st.columns((4,2.8,2.8,6))  
+    us1,bc1,bc2,us2=vAR_st.columns((4,3,3,6))  
     e=a.split(",")
     f=b.split(",")
     c=set(e)
@@ -69,7 +69,7 @@ def uni_int():
     vAR_st.markdown("<p style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find the Union and Intersection </p>", unsafe_allow_html=True)
     vAR_st.markdown("<hr style=height:2.5px;background-color:gray>",unsafe_allow_html=True)
     w1,col1,col2,w2=vAR_st.columns((1,2,2,1))
-    us1,bc1,bc2,us2=vAR_st.columns((4,2.8,2.8,6))
+    us1,bc1,bc2,us2=vAR_st.columns((4,3,3,6))
         
     with col1:
         vAR_st.markdown("## ")
