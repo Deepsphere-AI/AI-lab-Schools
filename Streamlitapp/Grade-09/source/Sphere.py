@@ -8,7 +8,7 @@ def sphere_1():
     st.markdown("<p style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find the Sphere </p>", unsafe_allow_html=True)
     st.markdown("<hr style=height:2.5px;background-color:gray>",unsafe_allow_html=True)
     w1,col1,col2,w2=st.columns((1,2,2,1))
-    us1,bc1,bc2,us2=st.columns((4,2.5,2.8,6))
+    us1,bc1,bc2,us2=st.columns((4,3,3,6))
     with col1:
         st.markdown("")
         st.write("# Enter the Radius")
