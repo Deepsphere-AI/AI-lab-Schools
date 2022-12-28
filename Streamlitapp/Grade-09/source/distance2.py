@@ -4,7 +4,7 @@ import math
 import source.title_1 as head
 def distance_1():
     head.title()
-    st.markdown("<p style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find the Midpoint </p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find the distance between two points </p>", unsafe_allow_html=True)
     st.markdown("<hr style=height:2.5px;background-color:gray>",unsafe_allow_html=True)
     w1,col1,col2,w2=st.columns((1,2,2,1))
     us1,bc1,bc2,us2=st.columns((4,2.5,2.8,6))
