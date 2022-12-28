@@ -49,7 +49,6 @@ def trisection_1():
 
         #else:
          #   st.error("Error")
-        with col1:
-        
-            st.write("# Result ")
+            with col1:
+                st.write("# Result ")
 
