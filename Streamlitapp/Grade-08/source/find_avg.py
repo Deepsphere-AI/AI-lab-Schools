@@ -16,7 +16,7 @@ def average():
     us1,bc1,bc2,us2=st.columns((4,2.5,2.8,6))
     with col1:
         st.markdown("")
-        st.write("# Enter the Number ")
+        st.write("# Enter the Series ")
     # ------------to create the function to clear the input-----------#
     with bc2:
         st.markdown("")
