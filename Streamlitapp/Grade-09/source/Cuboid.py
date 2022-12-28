@@ -32,7 +32,7 @@ def cuboid_1():
         vAR_input_breadth=st.number_input("",min_value=0.00,step=1.0,key="Clear_breadth")
         vAR_input_Height=st.number_input("",min_value=0.00,step=1.0,key="Clear_Height") 
         selected = st.selectbox("",
-                            ["Surface area","Volume","Space diagonal"],key="cubiod_selectbox")
+                            ["Surface Area","Volume","Space diagonal"],key="cubiod_selectbox")
 
         
     #-----cuboid-------#
@@ -42,7 +42,7 @@ def cuboid_1():
         if st.button("Submit"):
             with col2:
                 if vAR_input_breadth and vAR_input_Height and vAR_input_length !=0:
-                    if  selected == 'Surface area':
+                    if  selected == 'Surface Area':
                         vAR_Surface_area = 2 * ( vAR_input_length * vAR_input_breadth +  vAR_input_breadth * vAR_input_Height + vAR_input_Height * vAR_input_length)
                         vAR_Surface_area = round(vAR_Surface_area,2)
                         st.success(vAR_Surface_area)
