@@ -13,7 +13,7 @@ def BMI():
         category = vAR_st.selectbox('',('Adult','Child'))
     
     with col2:
-        vAR_st.write('# ')
+        vAR_st.write('### ')
         vAR_st.subheader('Select the height format')
     
     with col5:
