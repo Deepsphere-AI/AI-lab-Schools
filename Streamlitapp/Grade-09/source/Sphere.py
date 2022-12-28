@@ -23,7 +23,7 @@ def sphere_1():
     with col2:
         vAR_input_Radius=st.number_input("",min_value=0.00,step=1.0,key="Clear_sphere_Radius") 
         selected = st.selectbox("",
-                            ["Select","Surface Area","Volume"],key="sphere_selectbox")
+                            ["Surface Area","Volume"],key="sphere_selectbox")
     #-----sphere-------#
     with bc1:
         st.markdown("")
