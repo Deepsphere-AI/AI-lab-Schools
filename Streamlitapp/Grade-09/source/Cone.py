@@ -26,7 +26,7 @@ def cone_1():
         vAR_input_Radius=st.number_input("",min_value=0.00,step=1.0,key="Clear_cone_Radius") 
         vAR_input_Height=st.number_input("",min_value=0.00,step=1.0,key="Clear_cone_Height") 
         selected = st.selectbox("",
-                            ["Select","Surface Area","Volume"],key="text1_selectbox")
+                            ["Surface Area","Volume"],key="text1_selectbox")
     #-----cylinder-------#
     with bc1:
         st.markdown("")
