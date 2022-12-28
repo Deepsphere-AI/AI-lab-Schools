@@ -25,7 +25,7 @@ def cuboid_1():
             st.session_state["Clear_Square"] = 0
             st.session_state["Clear_breadth"] = 0
             st.session_state["Clear_Height"] = 0
-            st.session_state["cubiod_selectbox"] = "Select"
+            st.session_state["cubiod_selectbox"] = "Surface Area"
         st.button("Clear", on_click=clear_text)   
     with col2:
         vAR_input_length=st.number_input("",min_value=0.00,step=1.0,key="Clear_length") 
