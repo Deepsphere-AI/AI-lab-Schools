@@ -11,6 +11,8 @@ def cube_1():
     with col1:
         st.markdown("")
         st.write("# Enter the Area ")
+        st.markdown("### ")
+        st.write("# Select")
     # ------------to create the function to clear the input-----------#
     with bc2:
         st.markdown("")
@@ -40,7 +42,4 @@ def cube_1():
                 else:
                     st.error("Error")
                 with col1:
-                    st.markdown("# ")
-                    st.markdown("# ")
-                    st.markdown(" ")
                     st.write("# Result ")
