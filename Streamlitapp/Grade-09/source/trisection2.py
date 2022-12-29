@@ -10,13 +10,13 @@ def trisection_1():
     us1,bc1,bc2,us2=st.columns((4,3,3,6))
     with col1:
         st.markdown("")
-        st.write("# Enter the x1 ")
+        st.write("# Enter x1 ")
         st.markdown("### ")
-        st.write("# Enter the y1 ")
+        st.write("# Enter y1 ")
         st.markdown("### ")
-        st.write("# Enter the x2 ")
+        st.write("# Enter x2 ")
         st.markdown("### ")
-        st.write("# Enter the y2 ")
+        st.write("# Enter y2 ")
     # ------------to create the function to clear the input-----------#
     with bc2:
         st.markdown("")
