@@ -55,7 +55,7 @@ def frustum():
         vAR_st.markdown("### Radius 1")        
         vAR_st.markdown("## ")
         vAR_st.markdown("### Radius 2")
-        vAR_st.markdown("### ")
+        vAR_st.markdown("## ")
         vAR_st.markdown("### Height")
         
     with col2:
