@@ -4,6 +4,7 @@ st.set_page_config(layout="wide")
 import math
 from PIL import Image
 import source.title_1 as head
+import source.frustum as fstm
 import source.distance as dis
 import source.section_formula as sec
 #import source.tables as tri
@@ -23,7 +24,7 @@ with imcol3:
 #---------Side bar-------#
 with st.sidebar:
     selected = st.selectbox("",
-                     ['Home',"Distance","Section Formula","Area of Quadrilateral","Area of Triangle","Collinear Check"],key='text')#"Trigonometry Table"
+                     ['Home',"Distance","Section Formula","Area of Quadrilateral","Area of Triangle","Collinear Check","Volume of Frustum"],key='text')#"Trigonometry Table"
     Library = st.selectbox("",
                      ["Library Used","Streamlit","Streamlit-option-Menu","Image","Math","Pandas"],key='text1')
     Gcp_cloud = st.selectbox("",
@@ -52,5 +53,7 @@ if __name__ == "__main__":
             areatri.atri()
         if selected == "Collinear Check" :
             collin.colli()
+        if selected == "Volume of Frustum":
+            fstm.frustum()
     except BaseException as error:
         st.error(error)
