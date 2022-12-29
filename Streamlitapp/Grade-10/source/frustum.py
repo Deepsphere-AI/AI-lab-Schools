@@ -65,7 +65,7 @@ def frustum():
         leng=h**2 + (a-b)**2
         c=leng**0.5
     with col1:
-        vAR_st.markdown("### ")
+        vAR_st.markdown("## ")
         vAR_st.markdown("### Select")
     with col2:
         selected=vAR_st.selectbox('',['curved Surface Area','Volume'])
