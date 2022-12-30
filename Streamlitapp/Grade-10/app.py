@@ -5,7 +5,6 @@ import math
 from PIL import Image
 import source.title_1 as head
 import source.frustum as fstm
-import source.distance as dis
 import source.section_formula as sec
 #import source.tables as tri
 import source.areaquad as area
