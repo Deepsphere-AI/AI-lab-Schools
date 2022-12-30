@@ -1,6 +1,6 @@
 import streamlit as vAR_st
 import source.title_1 as head
-#import source.frustum as fstm    copy this to app
+
 def clr_num():
     vAR_st.session_state['radi1']=0
     vAR_st.session_state['radi2']=0
@@ -68,9 +68,9 @@ def frustum():
         vAR_st.markdown("## ")
         vAR_st.markdown("### Select")
     with col2:
-        selected=vAR_st.selectbox('',['curved Surface Area','Volume'])
+        selected=vAR_st.selectbox('',['Volume','curved Surface Area'])
     if selected=="curved Surface Area":
         csa(a,b,c)
     if selected=="Volume":
         vol(a,b,c)
-# frustum()
+
