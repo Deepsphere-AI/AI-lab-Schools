@@ -23,7 +23,7 @@ with imcol3:
 #---------Side bar-------#
 with st.sidebar:
     selected = st.selectbox("",
-                     ['Home',"Distance","Section Formula","Area of Quadrilateral","Area of Triangle","Collinear Check","Volume of Frustum"],key='text')#"Trigonometry Table"
+                     ['Home',"Section Formula","Area of Quadrilateral","Area of Triangle","Collinear Check","Volume of Frustum"],key='text')#"Trigonometry Table"
     Library = st.selectbox("",
                      ["Library Used","Streamlit","Streamlit-option-Menu","Image","Math","Pandas"],key='text1')
     Gcp_cloud = st.selectbox("",
@@ -40,8 +40,6 @@ if __name__ == "__main__":
     try:
         if selected == "Home":
             head.title()
-        if selected == "Distance":
-            dis.distance_1() 
         if selected == "Section Formula":
             sec.Section_1() 
         if selected == "Trigonometry Table":
