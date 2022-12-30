@@ -12,6 +12,7 @@ def atri():
     with col1:
         vAR_st.markdown("### ")
         vAR_st.subheader("Enter x1 and y1")
+        vAR_st.markdown("# ")
         vAR_st.subheader("Enter x2 nd y2 ")
         vAR_st.subheader("Enter x3 and y3")
     # ------------to create the function to clear the input-----------#
