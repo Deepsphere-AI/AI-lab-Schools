@@ -5,6 +5,7 @@ import math
 from PIL import Image
 import source.title_1 as head
 import source.frustum as fstm
+import source.sd_var as sd
 import source.section_formula as sec
 import source.tables as tri
 import source.areaquad as area
@@ -23,7 +24,7 @@ with imcol3:
 #---------Side bar-------#
 with st.sidebar:
     selected = st.selectbox("",
-                     ['Home',"Section Formula","Area of Quadrilateral","Area of Triangle","Collinear Check","Volume of Frustum","Trigonometry Table"],key='text')
+                     ['Home',"Section Formula","Area of Quadrilateral","Area of Triangle","Collinear Check","Volume of Frustum","Trigonometry Table","Standard Deviation & varience"],key='text')
     Library = st.selectbox("",
                      ["Library Used","Streamlit","Streamlit-option-Menu","Image","Math","Pandas"],key='text1')
     Gcp_cloud = st.selectbox("",
@@ -52,5 +53,7 @@ if __name__ == "__main__":
             collin.colli()
         if selected == "Volume of Frustum":
             fstm.frustum()
+        if selected == "Standard Deviation & varience":
+            sd.stats()
     except BaseException as error:
         st.error(error)
