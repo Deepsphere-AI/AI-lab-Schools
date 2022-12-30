@@ -17,6 +17,8 @@ def Section_1():
         st.write("# Enter the m1 ")
         st.markdown("### ")
         st.write("# Enter the m2 ")
+        st.markdown("### ")
+        st.write("# Select")
     # ------------to create the function to clear the input-----------#
     with bc2:
         st.markdown("")
