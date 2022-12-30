@@ -6,7 +6,7 @@ from PIL import Image
 import source.title_1 as head
 import source.frustum as fstm
 import source.section_formula as sec
-#import source.tables as tri
+import source.tables as tri
 import source.areaquad as area
 import source.areatri as areatri
 import source.collinear as collin
