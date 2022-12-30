@@ -10,8 +10,8 @@ def atri():
     w1,col1,col2,col3,w2=vAR_st.columns((1,3,2,2,1))
     us1,bc1,bc2,us2=vAR_st.columns((4,2.5,2.8,6))
     with col1:
-        vAR_st.markdown("### ")
-        vAR_st.markdown("### ")
+        vAR_st.markdown(" ")
+        vAR_st.markdown(" ")
         vAR_st.subheader("Enter x1 and y1")
         vAR_st.markdown(" ")
         vAR_st.subheader("Enter x2 nd y2 ")
