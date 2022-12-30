@@ -49,6 +49,7 @@ def atri():
         if vAR_st.button("Submit"):
             with col2:
                     vAR_res=0.5*((vAR_input_x1*(vAR_input_y2-vAR_input_y3)+vAR_input_x2*(vAR_input_y3-vAR_input_y1)+vAR_input_x3*(vAR_input_y1-vAR_input_y2)))
+                    vAR_st.markdown("")
                     vAR_st.success((str(vAR_res)+ " Sq units")) 
 
             
