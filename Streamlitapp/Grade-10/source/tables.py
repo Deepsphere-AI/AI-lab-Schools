@@ -1,9 +1,9 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import math
-#import source.title_1 as head
+import source.title_1 as head
 def table_1():
-    #head.title()
+    head.title()
     st.markdown("<p style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find the Distance </p>", unsafe_allow_html=True)
     st.markdown("<hr style=height:2.5px;background-color:gray>",unsafe_allow_html=True)
     w1,col1,col2,w2=st.columns((1,2,2,1))
