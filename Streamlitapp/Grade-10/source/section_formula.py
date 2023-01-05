@@ -7,14 +7,16 @@ def Section_1():
     st.markdown("<p style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to Section Formuls </p>", unsafe_allow_html=True)
     st.markdown("<hr style=height:2.5px;background-color:gray>",unsafe_allow_html=True)
     w1,col1,col2,col3,w2=st.columns((1,3,2,2,1))
-    us1,bc1,bc2,us2=st.columns((4,2.5,2.8,6))
+    w1,col11,col22,w2=st.columns((1,3,4,1))
+    us1,bc1,bc2,us2=st.columns((4,3,3,6))
     
     with col1:
         st.markdown("")
         st.write("# Enter the x1 and y1")
-        st.markdown("")
-        st.write("# Enter the x2 and y2")
         st.markdown("### ")
+        st.write("# Enter the x2 and y2")
+    with col11:
+        st.markdown("")
         st.write("# Enter the m ")
         st.markdown("### ")
         st.write("# Enter the n ")
@@ -40,7 +42,7 @@ def Section_1():
         vAR_input_x2=st.number_input("",min_value=0.00,step=1.0,key="Clear_sec_y1")
     with col3:
         vAR_input_y2=st.number_input("",min_value=0.00,step=1.0,key="Clear_sec_y2")
-    with col2:    
+    with col22:    
         vAR_input_m=st.number_input("",min_value=0.00,step=1.0,key="Clear_sec_m")
         vAR_input_n=st.number_input("",min_value=0.00,step=1.0,key="Clear_sec_n")
         selected=st.selectbox("",["Internal Section","External Section"])
@@ -49,7 +51,7 @@ def Section_1():
         st.markdown("")
         st.markdown("")
         if st.button("Submit"):
-            with col2:
+            with col22:
                 
                 if vAR_input_x1 and vAR_input_x2 and vAR_input_m and vAR_input_n and vAR_input_y1 != 0:
                     if selected == "Internal Section":
@@ -60,5 +62,5 @@ def Section_1():
                         st.success(vAR_dis)
                 else:
                     st.error("Error")
-                with col1:
+                with col11:
                     st.write("# Result ")
