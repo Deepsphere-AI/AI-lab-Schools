@@ -101,7 +101,7 @@ def ascdesc():
     if vAR_a!="":
         if s and selected=="Select":
             with col2:
-                vAR_st.subheader("Select the sorting order")
+                vAR_st.info("Select the sorting order")
 
     if vAR_a=="":
         if s:
