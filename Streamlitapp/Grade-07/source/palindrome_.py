@@ -20,7 +20,7 @@ def palindrome():
         if vAR_button:
             if len(b)>1:
                 if " " not in b:
-                    if vAR_pal=="is palindrome":
+                    if vAR_pal=="Palindrome":
                         with col1:
                             vAR_st.markdown("## ")
                             vAR_st.markdown("### Result")
@@ -33,7 +33,7 @@ def palindrome():
                             vAR_st.markdown("### Result")
                         with col2:
                             vAR_st.write("")
-                            vAR_st.success(vAR_pal)   
+                            vAR_st.warning(vAR_pal)   
                 else:
                     with col2:
                         vAR_st.write("")
