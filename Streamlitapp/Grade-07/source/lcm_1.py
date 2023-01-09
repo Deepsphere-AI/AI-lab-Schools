@@ -9,7 +9,7 @@ def clear_input():
 
 def lcm():
     head.title()
-    vAR_st.markdown("<p style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find the </p>", unsafe_allow_html=True)
+    vAR_st.markdown("<p style='text-align: center; color: black; font-size:20px;'><span style='font-weight: bold'>Problem Statement: </span>Application to find the LCM </p>", unsafe_allow_html=True)
     vAR_st.markdown("<hr style=height:2px;background-color:gray>",unsafe_allow_html=True)
     w1,col1,col2,w2=vAR_st.columns((1,2,2,1))
     us1,bc1,bc2,us2=vAR_st.columns((4,1.4,1.4,4))
