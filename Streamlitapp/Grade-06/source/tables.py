@@ -1,6 +1,7 @@
 import streamlit as vAR_st
 from streamlit_option_menu import option_menu
-
+import pandas as pd
+import numpy as np
 
 def tables():
     w1,col1,col2,w2=vAR_st.columns((1,2,2,1))
@@ -28,11 +29,23 @@ def tables():
                 vAR_st.markdown("")
                 if vAR_input_number.isnumeric():
                     vAR_num=int(vAR_input_number)
+                    df=[]
                     for i in range(1,11):
-                        vAR_x=vAR_num, 'x', i, "=" ,vAR_num*i
+                        vAR_x=vAR_num, 'x', i, "=" ,vAR_num*i   #"4,x,1,=,4"
                         vAR_x=','.join(str(item) for item in vAR_x)
-                        vAR_y=vAR_x.replace(",","")  
-                        vAR_st.subheader(vAR_y)
+                        tab=vAR_x.split(",")
+                        df.append(tab)
+                        hide_table_row_index = """
+                            <style>
+                            thead tr:first-child, thead th:first-child {display:none}
+                            tr th{display:none}
+                            </style>
+                            """
+                    vAR_st.markdown(hide_table_row_index, unsafe_allow_html=True)
+                    
+                    
+                    vAR_st.table(df)
+
                     with col1:
                         vAR_st.subheader("ㅤㅤㅤTables")
                 elif "." in vAR_input_number:
